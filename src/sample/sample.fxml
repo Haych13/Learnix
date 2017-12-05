@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Settings">
+          <items>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About Learnix" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+      <children>
+            <AnchorPane layoutX="324.0" layoutY="25.0" prefHeight="336.0" prefWidth="290.0" style="-fx-background-color: grey;">
+               <children>
+                  <TextField layoutX="71.0" layoutY="113.0" prefWidth="150.0" promptText="Username" />
+                  <PasswordField layoutX="71.0" layoutY="156.0" prefHeight="25.0" prefWidth="150.0" promptText="Password" />
+                  <ButtonBar layoutX="103.0" layoutY="235.0" prefHeight="25.0" prefWidth="45.0" />
+                  <Button alignment="CENTER" layoutX="72.0" layoutY="288.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Create Learnix Account" textFill="WHITE" />
+                <Button alignment="CENTER" layoutX="118.0" layoutY="223.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Login" textFill="WHITE" fx:id="loginBtn" onAction="#loginBtnClick" />
+                  <Label alignment="CENTER" layoutX="66.0" layoutY="35.0" prefHeight="28.0" prefWidth="150.0" text="Login to Learnix" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="336.0" fitWidth="290.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/LearnixLoginLogo.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
