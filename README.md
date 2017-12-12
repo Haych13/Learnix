@@ -5,8 +5,12 @@ Learnix is an open-source program made with JavaFX to help you learn how to use 
 **Why Learnix over CodeAcademy?**
 Learnix is an all-in-one software that doesn't need the internet to function, Learnix will be completely open-source so it can always be kept upto date if somethine changes or new is added. 
 
+ **Where can I download Learnix?**
+ 
+
+Not yet, as Learnix is still being developed I'd like it to be in a more complete state before I make the repo public
 
  **When is the release?**
 
-Soon. Learnix is still under development and not ready for release just yet.
+Soon. Learnix is still under development and not ready for release just yet. I am aiming for June/July 2018 for a first release.
 
