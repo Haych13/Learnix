@@ -8,7 +8,7 @@ Learnix is an all-in-one software that doesn't need the internet to function, Le
  **Where can I download Learnix?**
  
 
-Not yet, as Learnix is still being developed I'd like it to be in a more complete state before I make the repo public
+You can't, at least not yet, as Learnix is still being developed I'd like it to be in a more complete state before I make the repo public
 
  **When is the release?**
 
