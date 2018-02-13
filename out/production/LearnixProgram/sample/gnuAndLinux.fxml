@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gnuAndLinuxController">
+   <top>
+      <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar style="-fx-background-color: grey;">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons" />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Learnix">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system." wrappingWidth="325.0" VBox.vgrow="ALWAYS" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this." wrappingWidth="325.0" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system." wrappingWidth="325.0" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel." wrappingWidth="325.0" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel." wrappingWidth="325.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="379.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/linux-logo.jpg" />
+               </image>
+            </ImageView>
+            <Label text="The Penguin is the logo for Linux" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="143.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/gnuLogo.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="63.0" prefWidth="200.0" text="This is the logo for GNU,&#10;a Wildebeest is also called a GNU, &#10;hence the logo" textFill="WHITE" VBox.vgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>
