@@ -7,6 +7,8 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -14,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.commandLineBasicsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.commandLineBasicsController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -64,29 +66,29 @@
       </HBox>
    </bottom>
    <left>
-      <VBox BorderPane.alignment="CENTER">
+      <VBox prefHeight="570.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The command line, also known as: Terminal, or CLI, is the most useful tool on the entire Operating System." wrappingWidth="325.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The command line, also known as: Terminal, or CLI, is the most useful tool on the entire Operating System." wrappingWidth="423.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For this tutorial you'll be learning about the shell program Bash (Bourne Again Shell), almost all GNU/Linux distrobutions will use Bash, and even MacOS. " wrappingWidth="325.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For this tutorial you'll be learning about the shell program Bash (Bourne Again Shell), almost all GNU/Linux distrobutions will use Bash, and even MacOS. " wrappingWidth="421.0">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start. If you have a Terminal to hand feel free to practice anything learnt here on there, practice makes perfect." wrappingWidth="325.0">
+            <Text fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start. If you have a Terminal to hand feel free to practice anything learnt here on there, practice makes perfect." wrappingWidth="414.0">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
             <Region prefHeight="20.0" prefWidth="329.0" />
@@ -99,14 +101,34 @@
                </VBox.margin>
             </Text>
             <Region layoutX="18.0" layoutY="229.0" prefHeight="20.0" prefWidth="329.0" />
-            <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you open the Terminal, the above text is similar to what you'll see on your own. It's your account's Username and then the System's name on the OS. " wrappingWidth="325.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you open the Terminal, the above text is similar to what you'll see on your own. It's your account's Username and then the System's name on the OS. " wrappingWidth="415.0">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
+            <Region prefHeight="83.0" prefWidth="453.0" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Example:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="38.0" prefWidth="453.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="100.0" prefWidth="82.0" />
+                  <ImageView fitHeight="75.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/learnixIsGreat.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -117,7 +139,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="379.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="570.0" prefWidth="503.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -125,7 +147,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out the text in the console, so what will appear if you type this?" wrappingWidth="325.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out the text in the console, so what will appear if you type this?" wrappingWidth="459.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -166,7 +188,7 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
                   </Label>
-                  <Region prefHeight="30.0" prefWidth="145.0" />
+                  <Region prefHeight="74.0" prefWidth="228.0" />
                   <Label fx:id="correctLbl" prefHeight="40.0" prefWidth="95.0" text="Correct!" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
@@ -183,7 +205,7 @@
             <Region prefHeight="233.0" prefWidth="335.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="75.0" prefWidth="283.0" />
+                  <Region prefHeight="75.0" prefWidth="408.0" />
                   <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />

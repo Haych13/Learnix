@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gnuAndLinuxController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gnuAndLinuxController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -53,13 +53,58 @@
       </HBox>
    </bottom>
    <left>
-      <VBox BorderPane.alignment="CENTER">
+      <VBox prefHeight="618.0" prefWidth="744.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system." wrappingWidth="325.0" VBox.vgrow="ALWAYS" />
-            <Text fill="WHITE" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this." wrappingWidth="325.0" />
-            <Text fill="WHITE" layoutX="10.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system." wrappingWidth="325.0" />
-            <Text fill="WHITE" layoutX="10.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel." wrappingWidth="325.0" />
-            <Text fill="WHITE" layoutX="10.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel." wrappingWidth="325.0" />
+            <HBox prefHeight="54.0" prefWidth="939.0">
+               <children>
+                  <Label text="A brief history on GNU and Linux" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system." wrappingWidth="722.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this." wrappingWidth="715.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system." wrappingWidth="711.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel." wrappingWidth="709.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel." wrappingWidth="685.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -70,7 +115,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="379.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="570.0" prefWidth="240.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>

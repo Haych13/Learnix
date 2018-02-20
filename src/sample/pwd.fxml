@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pwdController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pwdController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -61,22 +61,22 @@
       </HBox>
    </bottom>
    <left>
-      <VBox BorderPane.alignment="CENTER">
+      <VBox prefHeight="574.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In GNU/Linux, everything is a file and all the files are organised in a hierachical directory tree. It might like confusing at first, but you'll soon get the hang of it." wrappingWidth="319.37109375">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In GNU/Linux, everything is a file and all the files are organised in a hierachical directory tree. It might like confusing at first, but you'll soon get the hang of it." wrappingWidth="424.37109375">
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="20.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Locations of files are often called paths. To give an exaple of a path, lets say you just downloaded a file called &quot;file.pdf&quot;, your username on the computer is Learnix, so the path would look like this:" wrappingWidth="319.37109375">
+            <Text fill="WHITE" layoutX="20.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Locations of files are often called paths. To give an exaple of a path, lets say you just downloaded a file called &quot;file.pdf&quot;, your username on the computer is Learnix, so the path would look like this:" wrappingWidth="426.37109375">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
             <Region layoutX="18.0" layoutY="243.0" prefHeight="16.0" prefWidth="329.0" />
@@ -85,15 +85,26 @@
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                </VBox.margin>
             </Text>
             <Region prefHeight="16.0" prefWidth="329.0" />
-            <Text fill="WHITE" layoutX="20.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ever you have navigated around the filesystem and you have forgotten where you are you can use the 'pwd' command, this means Print Working Directory, upon typing pwd the path to where you are will be printed underneath." wrappingWidth="319.37109375">
+            <Text fill="WHITE" layoutX="20.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ever you have navigated around the filesystem and you have forgotten where you are you can use the 'pwd' command, this means Print Working Directory, upon typing pwd the path to where you are will be printed underneath." wrappingWidth="429.37109375">
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
+            <Region prefHeight="50.0" prefWidth="453.0" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="/&#10;|-- bin&#10;|   |-- file1&#10;|   |-- file2&#10;|-- etc&#10;|   |-- file3&#10;|   `-- directory1&#10;|       |-- file4&#10;|       `-- file5&#10;|-- home&#10;|   `-- Documents&#10;|       |-- file1&#10;|       `-- file2&#10;|   `-- Downloads&#10;|       |-- file1&#10;|       `-- file2&#10;|-- var" wrappingWidth="325.0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin></Text>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -104,7 +115,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="379.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="574.0" prefWidth="482.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -112,13 +123,14 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="/&#10;|-- bin&#10;|   |-- file1&#10;|   |-- file2&#10;|-- etc&#10;|   |-- file3&#10;|   `-- directory1&#10;|       |-- file4&#10;|       `-- file5&#10;|-- home&#10;|   `-- Documents&#10;|       |-- file1&#10;|       `-- file2&#10;|   `-- Downloads&#10;|       |-- file1&#10;|       `-- file2&#10;|-- var" wrappingWidth="325.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Type the command used to find your Working Directory:">
                <font>
-                  <Font name="Lucida Console" size="9.0" />
+                  <Font size="16.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </VBox.margin></Text>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Text>
             <Region prefHeight="20.0" prefWidth="329.0" />
             <TextField fx:id="pwdAnswerBox">
                <VBox.margin>
@@ -132,29 +144,44 @@
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
             </Button>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="tryAgainLbl" prefHeight="30.0" prefWidth="110.0" text="Try again" textFill="WHITE">
+                  <Label fx:id="tryAgainLbl" prefHeight="50.0" prefWidth="158.0" text="Try again" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
                   </Label>
-                  <Region prefHeight="30.0" prefWidth="145.0" />
-                  <Label fx:id="correctLbl" text="Correct!" textFill="WHITE">
+                  <Region prefHeight="100.0" prefWidth="183.0" />
+                  <Label fx:id="correctLbl" prefHeight="50.0" prefWidth="133.0" text="Correct!" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
                   </Label>
                </children>
             </HBox>
             <Region prefHeight="128.0" prefWidth="329.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="75.0" prefWidth="283.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="100.0" prefWidth="390.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="117.0" text="Next" textAlignment="RIGHT">
                      <HBox.margin>
-                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
