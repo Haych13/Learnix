@@ -27,7 +27,7 @@ public class Main extends Application
         //primaryStage.getIcons().add(new Image("https://harrywhitter.ovh/wp-content/uploads/sharex/icon.png")); //Uploaded file to my own website, can load the Learnix icon from there instead if wanted
         primaryStage.setTitle("Learnix"); // Names the program Learnix
         primaryStage.setScene(new Scene(root, 1000, 700));  //default size for the program to load into
-        //primaryStage.initStyle(StageStyle.UNDECORATED); //Removes the Windows bar completely
+        //primaryStage.initStyle(StageStyle.UNDECORATED); //Removes the Window bar completely, will need to implement for MacOS only as it still allows fullscreen whereas Windows doesn't.
         primaryStage.setResizable(false); // Stops the resizing and maximising of the program
         primaryStage.show();
 

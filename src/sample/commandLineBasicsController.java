@@ -20,11 +20,13 @@ public class commandLineBasicsController {
 
     public Label correctLbl;
     public Label tryAgainLbl;
+    public Label answerCorrectLbl;
     public void initialize() //Sets the labels and button to be hidden on the start of the scene so only a right answer makes it appear
     {
        correctLbl.setVisible(false);
        tryAgainLbl.setVisible(false);
        nextBtn.setVisible(false);
+        answerCorrectLbl.setVisible(true);
     }
 
     public TextField helloWorldAnswerBox; // Name of the answer box for the echo Hello World check
@@ -38,6 +40,7 @@ public class commandLineBasicsController {
             System.out.println("Correct");
             correctLbl.setVisible(true);
             tryAgainLbl.setVisible(false);
+            answerCorrectLbl.setVisible(false);
             nextBtn.setVisible(true);
         }
         else
@@ -47,6 +50,14 @@ public class commandLineBasicsController {
                 tryAgainLbl.setVisible(true);
                 nextBtn.setVisible(false);
             }
+    }
+
+    public Button CLBBackBtn;
+    public void CLBBackBtnClick() throws IOException {
+        System.out.println("You are back to the lessons screen");
+        Stage primaryStage = (Stage) CLBBackBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("terminalIntro.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
     }
 
     public Button nextBtn;

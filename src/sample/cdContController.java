@@ -27,6 +27,7 @@ public class cdContController
     public Label rTryAgainLbl;
     public Text potatoQuestion;
     public HBox rHBox;
+
     public void initialize() //Sets the labels and button to be hidden on the start of the scene so only a right answer makes it appear
     {
         aCorrectLbl.setVisible(false);
@@ -104,7 +105,7 @@ public class cdContController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("cpAndMv.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 }

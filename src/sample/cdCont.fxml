@@ -39,7 +39,10 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </top>

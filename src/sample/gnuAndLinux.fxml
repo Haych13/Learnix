@@ -10,6 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -37,7 +38,10 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </top>
@@ -70,28 +74,21 @@
                   </Label>
                </children>
             </HBox>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system." wrappingWidth="722.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In 1969 Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system." wrappingWidth="722.0" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
                <font>
                   <Font size="15.0" />
                </font></Text>
-            <Text fill="WHITE" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this." wrappingWidth="715.0">
+            <Text fill="WHITE" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd. The GNU General Public License (GPL), a free software license, was also created as a result of this." wrappingWidth="715.0">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
                <font>
                   <Font size="15.0" />
                </font></Text>
-            <Text fill="WHITE" layoutX="10.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system." wrappingWidth="711.0">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font></Text>
-            <Text fill="WHITE" layoutX="10.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel." wrappingWidth="709.0">
+            <Text fill="WHITE" layoutX="10.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="During the time of GNU's creation other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel." wrappingWidth="709.0">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -105,6 +102,21 @@
                <font>
                   <Font size="15.0" />
                </font></Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The kernel is one of the the most important pieces in an operating system. It allows the hardware to talk to the software, the kernel controls pretty much everything that happens on your system." wrappingWidth="711.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <Region prefHeight="34.0" prefWidth="732.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -127,7 +139,7 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <ImageView fitHeight="143.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="227.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Assets/gnuLogo.png" />
                </image>

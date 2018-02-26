@@ -72,7 +72,7 @@
       </HBox>
    </bottom>
    <center>
-      <ImageView fitHeight="276.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fitHeight="482.0" fitWidth="453.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@Assets/LearnixLoginLogo.png" />
          </image>

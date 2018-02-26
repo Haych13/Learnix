@@ -38,7 +38,10 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
             <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="cd (Change Directory)" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
@@ -46,6 +49,9 @@
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
             </Label>
          </children>
       </VBox>
@@ -95,16 +101,14 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <Region prefHeight="16.0" prefWidth="329.0" />
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cd /home/harry/Documents&#10;" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Region prefHeight="16.0" prefWidth="329.0" />
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So now you know absolute file paths, you can use 'cd' to change directory." wrappingWidth="427.37451171875">
                <font>
                   <Font size="15.0" />
@@ -152,7 +156,7 @@
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
             <Text fill="WHITE" layoutX="23.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Because you were already in /home/harry/Documents, School was already in that directory so you didn't need the full path. If you were in /home/harry/Pictures and inside Pictures there was a folder called &quot;Holiday&quot; you could swap into Holiday with only :" wrappingWidth="460.0">
@@ -168,7 +172,7 @@
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
             <HBox prefHeight="100.0" prefWidth="200.0">

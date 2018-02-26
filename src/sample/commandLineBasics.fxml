@@ -110,7 +110,7 @@
                </VBox.margin>
             </Text>
             <Region prefHeight="83.0" prefWidth="453.0" />
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Example:">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Here is an example, &quot;harry&quot; is the username, and &quot;HAWK&quot; is the name of the PC" wrappingWidth="389.80615234375">
                <font>
                   <Font size="15.0" />
                </font>
@@ -129,6 +129,11 @@
                   </ImageView>
                </children>
             </HBox>
+            <Button fx:id="CLBBackBtn" mnemonicParsing="false" onAction="#CLBBackBtnClick" prefHeight="24.0" prefWidth="60.0" text="Back">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </Button>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -147,7 +152,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out the text in the console, so what will appear if you type this?" wrappingWidth="459.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out text in the console, not incredibly useful on its own like this but it can be useful when writing scripts.&#10;&#10;Using the example to the left for reference, what will appear if you type this?" wrappingWidth="459.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -175,6 +180,17 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
             </Button>
+            <Label fx:id="answerCorrectLbl" text="Answer correctly to move to the next page" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Label>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Label fx:id="tryAgainLbl" prefHeight="30.0" prefWidth="110.0" text="Try again" textFill="WHITE">
