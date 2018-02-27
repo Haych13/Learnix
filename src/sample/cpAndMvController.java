@@ -16,7 +16,7 @@ public class cpAndMvController
 
     public void initialize() //Sets the labels and button to be hidden on the start of the scene so only a right answer makes it appear
     {
-        correctLbl.setVisible(true);
+        correctLbl.setVisible(false);
         tryAgainLbl.setVisible(false);
         nextBtn.setVisible(false);
     }
