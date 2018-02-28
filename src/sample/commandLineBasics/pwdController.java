@@ -54,7 +54,7 @@ public class pwdController
     {
         System.out.println("You are now in cd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("cd.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/cd.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

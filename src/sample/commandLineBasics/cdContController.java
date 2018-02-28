@@ -96,7 +96,7 @@ public class cdContController
     public void cdBackBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("cd.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/cd.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -105,7 +105,7 @@ public class cdContController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("cpAndMv.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/cpAndMv.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 }

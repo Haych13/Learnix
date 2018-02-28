@@ -80,7 +80,7 @@
             </Text>
             <ImageView fitHeight="245.0" fitWidth="444.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Assets/openTerminal.jpg" />
+                  <Image url="@../Assets/openTerminal.jpg" />
                </image>
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
@@ -108,7 +108,7 @@
          <children>
             <ImageView fitHeight="305.0" fitWidth="490.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Assets/Terminal-linux-ubuntu.png" />
+                  <Image url="@../Assets/Terminal-linux-ubuntu.png" />
                </image>
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

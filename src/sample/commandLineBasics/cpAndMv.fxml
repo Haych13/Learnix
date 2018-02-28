@@ -130,7 +130,7 @@
          <children>
             <ImageView fitHeight="140.0" fitWidth="460.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Assets/mvRename.png" />
+                  <Image url="@../Assets/mvRename.png" />
                </image>
             </ImageView>
             <Region prefHeight="0.0" prefWidth="465.0" />

@@ -32,7 +32,7 @@ public class commandLineBasicsController {
     public TextField helloWorldAnswerBox; // Name of the answer box for the echo Hello World check
 
     public Button helloWorldAnswerBtn; // Button to check the Hello World text
-    public void helloWorldAnswerBtnClick() throws IOException
+    public void helloWorldAnswerBtnClick()
     {
         System.out.println("helloWorldAnswerBtnClick has been clicked");
         if (helloWorldAnswerBox.getText().equals("hello world"))
@@ -56,7 +56,7 @@ public class commandLineBasicsController {
     public void CLBBackBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) CLBBackBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("terminalIntro.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/terminalIntro.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -65,7 +65,7 @@ public class commandLineBasicsController {
     {
         System.out.println("You are now in pwd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("pwd.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/pwd.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 }

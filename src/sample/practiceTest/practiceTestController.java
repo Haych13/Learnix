@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class terminalIntroController
+public class practiceTestController
 {
     public Button backBtn;
 
@@ -17,12 +17,5 @@ public class terminalIntroController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-    public Button nextBtn;
-    public void nextBtnClick() throws IOException
-    {
-        System.out.println("You are now in pwd");
-        Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics.fxml"));
-        primaryStage.getScene().setRoot(newRoot);
-    }
+
 }

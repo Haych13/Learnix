@@ -22,7 +22,7 @@ public class lessonsController
     {
         System.out.println("You have clicked practiceTestBtn");
         Stage primaryStage = (Stage) practiceTestBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("practiceTest.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("practiceTest/practiceTest.fxml"));
         primaryStage.getScene().setRoot(newRoot);
 
     }
@@ -32,7 +32,7 @@ public class lessonsController
     {
         System.out.println("You have clicked whatIsGnuBtn");
         Stage primaryStage = (Stage) whatIsGnuBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("gnuAndLinux.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("whatIsGnuAndLinux/gnuAndLinux.fxml"));
         primaryStage.getScene().setRoot(newRoot);
 
     }
@@ -42,7 +42,7 @@ public class lessonsController
     {
         System.out.println("You have clicked commandLineBasics");
         Stage primaryStage = (Stage) commandLineBasicsBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("terminalIntro.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/terminalIntro.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
