@@ -14,3 +14,16 @@ You can't, at least not yet, as Learnix is still being developed I'd like it to 
 
 Soon. Learnix is still under development and not ready for release just yet. I am aiming for June/July 2018 for a first release.
 
+
+
+Install Requirements:
+
+Windows and MacOS - Java9
+
+GNU/Linux - Oracle Java 9:
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+sudp apt install oracle-java9-installer
+sudo apt install oracle-java9-set-default
+
