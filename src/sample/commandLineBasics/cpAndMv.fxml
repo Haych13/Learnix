@@ -72,21 +72,37 @@
       </HBox>
    </bottom>
    <left>
-      <VBox prefHeight="570.0" prefWidth="496.0" BorderPane.alignment="CENTER">
+      <VBox pickOnBounds="false" prefHeight="570.0" prefWidth="496.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are already adept with using a computer you should already know the basics of how to copy and paste or move files around. The Terminal gives us an easy way to do it, and even quicker if you want to copy or move multiple files.&#10;&#10;To copy a file you use the command &quot;cp&quot;, meaning CoPy, you then type in the name of the file then the destination.&#10;&#10;Here's an example:" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are already adept with using a computer you should already know the basics of how to copy and paste or move files around. The Terminal gives us an easy way to do it, and even quicker if you want to copy or move multiple files.&#10;&#10;To copy a file you use the command &quot;cp&quot;, meaning CoPy, you then type in the name of the file then the destination.&#10;&#10;Here's an example:" wrappingWidth="439.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cp homework /home/harry/Documents/School" wrappingWidth="325.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cp homework /home/harry/Documents/School" wrappingWidth="378.0">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                  <Insets bottom="15.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Or" wrappingWidth="49.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cp homework /home/harry/Documents/School/homework" wrappingWidth="378.0">
+               <font>
+                  <Font name="Lucida Console" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="15.0" />
                </VBox.margin>
             </Text>
             <Text fill="WHITE" layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mv (MoVe) is similar to cp, use the command &quot;mv&quot;, the file you want to move, then the destination&#10;" wrappingWidth="325.0">
@@ -97,18 +113,29 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="48.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mv homework /home/harry/Documents/School" wrappingWidth="325.0">
+            <Text fill="WHITE" layoutX="48.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mv homework /home/harry/Documents/School" wrappingWidth="374.0">
                <font>
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                  <Insets bottom="15.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mv has a special quirk too, it's also used to rename files. " wrappingWidth="325.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Or" wrappingWidth="49.0">
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mv homework /home/harry/Documents/School/homework" wrappingWidth="374.0">
+               <font>
+                  <Font name="Lucida Console" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="15.0" />
+               </VBox.margin>
             </Text>
          </children>
          <BorderPane.margin>
@@ -120,7 +147,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="570.0" prefWidth="513.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="597.0" prefWidth="524.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -128,10 +155,21 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="mv has a special quirk too, it's also used to rename files. " wrappingWidth="441.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
             <ImageView fitHeight="140.0" fitWidth="460.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/mvRename.png" />
                </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
             </ImageView>
             <Region prefHeight="0.0" prefWidth="465.0" />
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Type in the command to copy a file called &quot;banana&quot; and put it in a directory called &quot;Food&quot; inside &quot;Documents&quot;. The username is &quot;jeff&quot;" wrappingWidth="488.3828125">

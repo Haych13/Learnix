@@ -83,7 +83,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start. If you have a Terminal to hand feel free to practice anything learnt here on there, practice makes perfect." wrappingWidth="414.0">
+            <Text fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So let's start. If you have a Terminal to hand feel free to practice anything learnt here on there, practice makes perfect." wrappingWidth="414.0">
                <font>
                   <Font size="15.0" />
                </font>

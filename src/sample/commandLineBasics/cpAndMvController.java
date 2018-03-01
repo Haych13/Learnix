@@ -23,10 +23,10 @@ public class cpAndMvController
 
     public TextField cpmvAnswerBox;
     public Button cpmvAnswerBtn;
-    public void cpmvAnswerBtnClick() throws IOException
+    public void cpmvAnswerBtnClick()
     {
         System.out.println("cpmvAnswerBtn has been clicked");
-        if (cpmvAnswerBox.getText().equals("cp banana /home/jeff/Documents/Food/banana"))
+        if (cpmvAnswerBox.getText().equals("cp banana /home/jeff/Documents/Food/banana") || (cpmvAnswerBox.getText().equals("cp banana /home/jeff/Documents/Food")) || (cpmvAnswerBox.getText().equals("cp banana /home/jeff/Documents/Food/")))
         {
             System.out.println("Correct");
             correctLbl.setVisible(true);
