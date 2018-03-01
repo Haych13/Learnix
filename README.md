@@ -16,14 +16,17 @@ Soon. Learnix is still under development and not ready for release just yet. I a
 
 
 
-Install Requirements:
+**Install Requirements:**
 
-Windows and MacOS - Java9
+Windows and MacOS - Java 9
 
-GNU/Linux - Oracle Java 9:
+GNU/Linux - Oracle Java 9 (JavaFX is not installed by default on OpenJDK, hence the requirement for Oracle Java 9):
 
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt update
 sudp apt install oracle-java9-installer
 sudo apt install oracle-java9-set-default
 
+Check your version with 
+
+java -version
