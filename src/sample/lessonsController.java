@@ -51,7 +51,7 @@ public class lessonsController
     {
         System.out.println("You have clicked usersAndGroupsBtn");
         Stage primaryStage = (Stage) usersAndGroupsBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("comingSoon.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGroups.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

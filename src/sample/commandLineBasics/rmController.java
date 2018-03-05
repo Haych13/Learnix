@@ -17,7 +17,7 @@ public class rmController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-    public Button nextBtn;
+  /*  public Button nextBtn;
     public void backBtnClick() throws IOException
     {
       System.out.println("You clicked the Next button");
@@ -25,5 +25,5 @@ public class rmController
       Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
       primaryStage.getScene().setRoot(newRoot);
     }
-
+*/
 }
