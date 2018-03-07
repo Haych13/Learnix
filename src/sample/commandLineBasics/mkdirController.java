@@ -31,7 +31,7 @@ public class mkdirController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("comingSoon.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/reMove.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 }
