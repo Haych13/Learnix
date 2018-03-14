@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.reMoveController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.touchController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -41,7 +41,7 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="rm - Remove" textAlignment="CENTER" textFill="WHITE">
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="touch - Time to create some files!" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -66,7 +66,7 @@
    <left>
       <VBox prefHeight="574.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can create directories and files, now it's time to learn how to delete, or rather, remove them.&#10;&#10;To remove a file you use rm. But be careful, you might be used to being able to go into the &quot;Recycle Bin&quot;, but once you do it on here they are gone. &#10;&#10;Some files wont be deleted, they'll be what's called &quot;Write-protected files&quot;, if you want to remove them you have to use one of the options after a command, the -f command. F meaning force.&#10;&#10;If you don't trust yourself you can always use the -i option, this command gives you a promt to double check if you want to remove the file.&#10;&#10;You can remove Directories too, if the Directory is empty (rmdir, meaning ReMove DIRectory) can be used, if you want to use rm then you must use the -r for recursive, to remove any potential files or subdirectories." wrappingWidth="424.37109375">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can make folders, now it's time to learn how to make files to go in them.&#10;&#10;Touch is a command originally used to change the timestamp on an existing file, such as when it was created. But run the command with a new filename and it will create a file instead of changing the timestamp (It can't change the timestamp is there isn't a file there!)&#10;&#10;Of course there are other ways to create files, but this is the quickest and easiest." wrappingWidth="424.37109375">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -74,13 +74,18 @@
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="rm File1" wrappingWidth="325.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="touch mynewfile" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With that one command above a file is created. Quick and east. You can also do multiple files at the same time, just leave a space between the name of each file.&#10;&#10;Time to try it out!&#10;&#10;" wrappingWidth="424.37109375">
+               <font>
+                  <Font size="15.0" />
+               </font>
             </Text>
          </children>
          <BorderPane.margin>
@@ -100,7 +105,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove a file in your current directory called schoolTimetable.txt">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create 3 files, File1, File2, and File3 in one command">
                <font>
                   <Font size="16.0" />
                </font>
@@ -109,7 +114,7 @@
                </VBox.margin>
             </Text>
             <Region prefHeight="20.0" prefWidth="329.0" />
-            <TextField fx:id="rmAnswerBox">
+            <TextField fx:id="touchAnswerBox">
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
@@ -117,7 +122,7 @@
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </TextField>
-            <Button fx:id="rmAnswerBtn" mnemonicParsing="false" onAction="#rmAnswerBtnClick" text="Check Answer">
+            <Button fx:id="touchAnswerBtn" mnemonicParsing="false" onAction="#touchAnswerBtnClick" text="Check Answer">
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>

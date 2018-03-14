@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class reMoveController
+public class touchController
 {
     public Button backBtn;
 
@@ -27,13 +27,13 @@ public class reMoveController
         nextBtn.setVisible(false);
     }
 
-    public TextField rmAnswerBox; // Name of the answer box for the echo Hello World check
+    public TextField touchAnswerBox; // Name of the answer box for the echo Hello World check
 
-    public Button rmAnswerBtn; // Button to check the Hello World text
-    public void rmAnswerBtnClick()
+    public Button touchAnswerBtn; // Button to check the Hello World text
+    public void touchAnswerBtnClick()
     {
-        System.out.println("rmAnswerButton has been clicked");
-        if (rmAnswerBox.getText().equals("rm schoolTimetable.txt"))
+        System.out.println("touchAnswerButton has been clicked");
+        if (touchAnswerBox.getText().equals("touch File1 File2 File3") || (touchAnswerBox.getText().equals("touch File2 File3 File1")) || (touchAnswerBox.getText().equals("touch File3 File1 File2")) || (touchAnswerBox.getText().equals("touch File1 File3 File2")) || (touchAnswerBox.getText().equals("touch File3 File2 File1")) || (touchAnswerBox.getText().equals("touch File2 File1 File3")) )
         {
             System.out.println("Correct");
             correctLbl.setVisible(true);
@@ -54,7 +54,7 @@ public class reMoveController
     {
         System.out.println("You are now in cd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/helpMan.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/reMove.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

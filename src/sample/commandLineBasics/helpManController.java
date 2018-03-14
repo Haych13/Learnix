@@ -1,4 +1,4 @@
-package sample.commandLineBasics;
+package sample;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,14 +16,13 @@ public class helpManController
         Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
-	
+
     public Button nextBtn;
     public void nextBtnClick() throws IOException
     {
-        System.out.println("You are now in cd");
+        System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
         Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/whatis.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
-
 }
