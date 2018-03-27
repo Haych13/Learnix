@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class systemPackagesController
+public class fromSourceCodeController
 {
     public Button backBtn;
 

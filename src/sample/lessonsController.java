@@ -60,7 +60,7 @@ public class lessonsController
     {
         System.out.println("You have clicked permissionsBtn");
         Stage primaryStage = (Stage) permissionsBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("comingSoon.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("permissions/permissions.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
