@@ -17,5 +17,12 @@ public class usersAndGroupsController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-
+    public Button nextBtn;
+    public void nextBtnClick() throws IOException
+    {
+        System.out.println("You are now in usersAndGroupsCont");
+        Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGroupsCont.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
 }

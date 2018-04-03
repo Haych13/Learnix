@@ -6,8 +6,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -15,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.usersAndGroupsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.usersAndGroupsContController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -70,14 +68,12 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In every operating system there are users and there are also groups. The system has these soley for permissions. Such as when accessing files, if they belong to James you don't want Janice to see or access them. &#10;&#10;Or you want a group of teachers to access the homework answer files but not the group of students.&#10;&#10;Each user has their own &quot;home&quot; directory. Each Documents and Download and Videos folder is seperate for each user. " wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You couldn't access the files because they are owned by root, to access the file you must use the root command" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin></Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="/home/username" wrappingWidth="325.0">
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="root cat /etc/shadow" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
                </font>
@@ -85,7 +81,20 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is where you'll find your home directory.&#10;&#10;There are a special user within GNU/Linux though, called root or superuser. Root is one of the most important things within the system, it is the most powerful user and can access any file and run or close any software. &#10;&#10;Because root is so powerful it's dangerous to use root all the time as you may break the system, or if someone gets access to root on your machine they could damage it.&#10;" wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now you'll be able to see the contents of the file.&#10;&#10;You can now get root access with the sudo command, but you can also run coimmands as the superuser with the su command too. &#10;&#10;The command su will log you in as root (if no username is speccified) as long as you know the password. If you type in a username you'll then login with that account.&#10;&#10;Don't let anyone have the password to root, or have access to run sudo own their own account, only people you trust.&#10;&#10;You have a new computer and want to make a new account for a family member or sibling and want to give them sudo? Easy, just remember to change &lt;username&gt; with the username you are adding" wrappingWidth="470.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo adduser &lt;username&gt;" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This will create a new user, it will ask for things such as passwords after you type in this command. Feel free to ignore anything about name and address, or fill it in if you wish." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -108,15 +117,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So you want to access a file, you need to use root to access the file but you are on your own account? Luckily users can run a command as root on their own user. &#10;&#10;Sudo (Super User DO), is a command that gives you one time access to run a file as root as long as you have been given the permission. If you installed the OS yourself you'll already have it, if not the administrator of the system has to add you.&#10;&#10;So lets say you wanted to access a protected file, such as /etc/shadow" wrappingWidth="456.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cat /etc/shadow" wrappingWidth="325.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo adduser &lt;username&gt; sudo" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
                </font>
@@ -124,19 +125,20 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You'll get a permission denied error." wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command will then add the user to the sudoers file. This is a file that contains all of the accounts which can access sudo. &#10;&#10;To remove the account from sudo it's the same command but with del instead of add" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <ImageView fitHeight="87.0" fitWidth="389.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Assets/permissionDenied.png" />
-               </image>
+            <Text fill="WHITE" layoutX="48.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo deluser &lt;username&gt; sudo" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
                <VBox.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
-            </ImageView>
+            </Text>
+            <Region prefHeight="260.0" prefWidth="489.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Region prefHeight="52.0" prefWidth="418.0" />
