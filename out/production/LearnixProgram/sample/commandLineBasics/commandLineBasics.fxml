@@ -124,7 +124,7 @@
                   <Region prefHeight="100.0" prefWidth="82.0" />
                   <ImageView fitHeight="75.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Assets/learnixIsGreat.png" />
+                        <Image url="@../Assets/learnixIsGreat.png" />
                      </image>
                   </ImageView>
                </children>

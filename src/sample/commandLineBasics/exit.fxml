@@ -40,11 +40,6 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="exit" textFill="WHITE">
-               <font>
-                  <Font size="25.0" />
-               </font>
-            </Label>
          </children>
       </VBox>
    </top>
@@ -62,10 +57,7 @@
    <left>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Well, you sure did a good job getting through the basics. We’ve only scratched the surface, now that you’ve learned to crawl, in the next set of courses, I’m gonna teach how to walk. &#10;For now, you can pat yourself on the back and take a break. To exit from the shell, you can use the exit command&#10;$ exit&#10;Or the logout command:&#10;$ logout&#10;Or if you are working out of a terminal GUI, you can just close the terminal, see you in the next course!&#10;&#10;" wrappingWidth="325.0" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="15.0" />
-               </font></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Template Text" wrappingWidth="325.0" VBox.vgrow="ALWAYS" />
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
