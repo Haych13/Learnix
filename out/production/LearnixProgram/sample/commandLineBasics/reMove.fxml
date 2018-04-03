@@ -6,7 +6,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -14,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.reMoveController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.commandLineBasics.reMoveController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -41,13 +40,10 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="rm - Remove" textAlignment="CENTER" textFill="WHITE">
+            <Label text="rm - Remove" textFill="WHITE">
                <font>
-                  <Font size="24.0" />
+                  <Font size="25.0" />
                </font>
-               <padding>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </padding>
             </Label>
          </children>
       </VBox>
@@ -64,24 +60,12 @@
       </HBox>
    </bottom>
    <left>
-      <VBox prefHeight="574.0" prefWidth="469.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="618.0" prefWidth="501.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can create directories and files, now it's time to learn how to delete, or rather, remove them.&#10;&#10;To remove a file you use rm. But be careful, you might be used to being able to go into the &quot;Recycle Bin&quot;, but once you do it on here they are gone. &#10;&#10;Some files wont be deleted, they'll be what's called &quot;Write-protected files&quot;, if you want to remove them you have to use one of the options after a command, the -f command. F meaning force.&#10;&#10;If you don't trust yourself you can always use the -i option, this command gives you a promt to double check if you want to remove the file.&#10;&#10;You can remove Directories too, if the Directory is empty (rmdir, meaning ReMove DIRectory) can be used, if you want to use rm then you must use the -r for recursive, to remove any potential files or subdirectories." wrappingWidth="424.37109375">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. &#10;$ rm file1&#10;Take caution when using rm, there is no magical trash can that you can fish out removed files. Once they are gone, they are gone for good, so be careful. &#10;Fortunately there are some safety measures put into place, so the average joe can’t just remove a bunch of important files. Write-protected files will prompt you for confirmation before deleting them. If a directory is write-protected it will also not be easily removed. &#10;Now if you don’t care about any of that, you can absolutely remove a bunch of files. &#10;$ rm -f file1&#10;-f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user (as long as you have the appropriate permissions).&#10;$ rm -i file&#10;Adding the -i flag like many of the other commands, will give you a prompt on whether you want to actually remove the files or directories. &#10;$ rm -r directory&#10;You can’t just rm a directory by default, you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.&#10;You can remove a directory with the rmdir command.&#10;$ rmdir directory &#10;&#10;&#10;" wrappingWidth="478.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="rm File1" wrappingWidth="325.0">
-               <font>
-                  <Font name="Lucida Console" size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-               </VBox.margin>
-            </Text>
+               </font></Text>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -92,7 +76,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="574.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="618.0" prefWidth="438.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -100,69 +84,21 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove a file in your current directory called schoolTimetable.txt">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                <font>
-                  <Font size="16.0" />
+                  <Font size="15.0" />
                </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </VBox.margin>
             </Text>
-            <Region prefHeight="20.0" prefWidth="329.0" />
-            <TextField fx:id="rmAnswerBox">
-               <VBox.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </padding>
-            </TextField>
-            <Button fx:id="rmAnswerBtn" mnemonicParsing="false" onAction="#rmAnswerBtnClick" text="Check Answer">
-               <VBox.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </padding>
-            </Button>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="63.0" prefWidth="465.0">
                <children>
-                  <Label fx:id="tryAgainLbl" prefHeight="50.0" prefWidth="158.0" text="Try again" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </HBox.margin>
-                     <padding>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </padding>
-                  </Label>
-                  <Region prefHeight="100.0" prefWidth="183.0" />
-                  <Label fx:id="correctLbl" prefHeight="50.0" prefWidth="133.0" text="Correct!" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </HBox.margin>
-                     <padding>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </padding>
-                  </Label>
-               </children>
-            </HBox>
-            <Region prefHeight="128.0" prefWidth="329.0" />
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Region prefHeight="100.0" prefWidth="390.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="117.0" text="Next" textAlignment="RIGHT">
-                     <HBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </HBox.margin>
+                  <Region prefHeight="196.0" prefWidth="347.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
                   </Button>
                </children>
             </HBox>
