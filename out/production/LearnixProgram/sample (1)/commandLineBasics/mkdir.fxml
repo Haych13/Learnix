@@ -6,8 +6,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -15,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.permissionsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mkdirController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -42,15 +40,15 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="Permissions" textFill="WHITE">
+            <Label text="mkdir (Make Directory)" textFill="WHITE">
                <font>
-                  <Font size="24.0" />
+                  <Font size="25.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -68,47 +66,16 @@
       </HBox>
    </bottom>
    <left>
-      <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="565.0" prefWidth="437.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Every single file within the system will have different permissions. &#10;&#10;Such as, in a Hostpital, Doctors would be able to view their patients record on the system whereas the people working at the reception counter might not be able to.&#10;&#10;Permissions seem complicated at first but are actually rather easy, permissions are &#10;&#10;r: Readable&#10;w: Writable&#10;x: eXecutable&#10;-: empty&#10;&#10;Each individual user has permissions, but also certain groups will have permissions, group permissions are useful because instead of updating each and every individual to access a file, for example, students and their homework, all they have to do is allow the Students group to access the file." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can travel into Directories and work your way around them, but now it's time to learn how to make them.&#10;&#10;It's quite easy, same formula as before:&#10;&#10;&lt;command&gt; &lt;name&gt;&#10;&#10;As long as a Directory with the same name doesn't already exist it will make it. You can eeven make multiple Directories at the same time. " wrappingWidth="440.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
-            <ImageView fitHeight="150.0" fitWidth="434.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Assets/permissionsMicrowave.png" />
-               </image>
-               <VBox.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </VBox.margin>
-            </ImageView>
-         </children>
-         <BorderPane.margin>
-            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-         </BorderPane.margin>
-      </VBox>
-   </left>
-   <right>
-      <VBox prefHeight="572.0" prefWidth="505.0" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-         </BorderPane.margin>
-         <padding>
-            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-         </padding>
-         <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There are four parts to the permissions of a file:&#10;The filetype, the 'd' stands to directory, whereas the '-' is a regular file&#10;The next rest are grouped into three parts and each part is 3 bits.&#10;It starts off with the user's individual permissions, then their groups permissions, then any other permissions (Other users). &#10;Lets look at the permissions for the Microwave file." wrappingWidth="456.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="- | rw- | rw- | r--" wrappingWidth="325.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="mkdir Movies Holiday" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
                </font>
@@ -116,7 +83,30 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As you can see, the first group has a '-' showing it is not a directory, it is a normal file. Then inside the user's permissions you can see 'rw-' meaning the user can read the file, they can modify the file and save the file, but they can not execute the file. This last one is only important if you need to execute a file, whereas this is a text document so there isn't actually anything to execute.&#10;&#10;The groups permissions are also 'rw-', so if the user didn't have permission to write over the file but the group had the permissions, they could still do it.&#10;&#10;The other permissions (everyone else) are only 'r--'." wrappingWidth="456.0">
+            <Button fx:id="mkdirBackBtn" mnemonicParsing="false" onAction="#mkdirBackBtnClick" prefHeight="75.0" prefWidth="60.0" text="Back">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="379.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can even create Subdirectories (A Directory within a Directory) at the same time.&#10;&#10;Adding -p, the &quot;Parent flag&quot; means you can do this. So if you wanted to make a folder for your holiday snaps, then a different folder for each year, you can make the folder for Holiday, and the year 2018 in one command!" wrappingWidth="482.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -124,15 +114,39 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="mkdir -p Holiday/2018" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can even combine all of this into one big command to make multiple folders across multiple Directories and Subdirectories" wrappingWidth="482.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mkdir -p Holiday/2017 School/Coursework" wrappingWidth="399.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="63.0" prefWidth="465.0">
                <children>
-                  <Region prefHeight="52.0" prefWidth="418.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="196.0" prefWidth="347.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
                      <HBox.margin>
-                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
                   </Button>
                </children>
