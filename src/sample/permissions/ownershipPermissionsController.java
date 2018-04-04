@@ -54,7 +54,7 @@ public class ownershipPermissionsController
     {
         System.out.println("You are now in ownershipPermissions");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("comingSoon.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 }

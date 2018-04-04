@@ -16,6 +16,15 @@ public class etcPasswdController
         primaryStage.getScene().setRoot(newRoot);
     }
 
+    public Button cdBackBtn;
+    public void cdBackBtnClick() throws IOException
+    {
+        System.out.println("You are back to the lessons screen");
+        Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/root.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
+
     public Button nextBtn;
     public void nextBtnClick() throws IOException
     {

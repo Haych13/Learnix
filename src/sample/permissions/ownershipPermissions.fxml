@@ -212,14 +212,13 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="100.0" prefWidth="378.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="74.0" text="Next" textAlignment="RIGHT">
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="94.0" prefWidth="451.0" text="Congratulations you have completed this section! &#10;Back to lessons" textAlignment="CENTER">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
-                     <HBox.margin>
-                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
                   </Button>
                </children>
             </HBox>

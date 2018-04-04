@@ -17,10 +17,19 @@ public class etcShadowController
         primaryStage.getScene().setRoot(newRoot);
     }
 
+    public Button cdBackBtn;
+    public void cdBackBtnClick() throws IOException
+    {
+        System.out.println("You are back to the lessons screen");
+        Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/etcPasswd.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
+
     public Button nextBtn;
     public void nextBtnClick() throws IOException
     {
-        System.out.println("You are now in usersAndGroupsCont");
+        System.out.println("You are now in root.fxml");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
         Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/etcGroup.fxml"));
         primaryStage.getScene().setRoot(newRoot);

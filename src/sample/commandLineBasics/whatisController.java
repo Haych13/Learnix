@@ -22,7 +22,7 @@ public class whatisController
     {
         System.out.println("You are now in cd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/alias.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/exit.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

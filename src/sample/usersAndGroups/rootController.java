@@ -50,18 +50,18 @@ public class rootController
         System.out.println("rootAnswerBtnClick has been clicked");
         if (rootAnswerBox.getText().equals("sudo adduser james"))
         {
-            System.out.println("Correct");
+
             rootCorrectLbl.setVisible(true);
             rootTryAgainLbl.setVisible(false);
             root2Question.setVisible(true);
             root2AnswerBox.setVisible(true);
             root2AnswerBtn.setVisible(true);
             rHBox.setVisible(true);
-
+            System.out.println("Correct");
         }
         else
         {
-            System.out.println("Try again");
+
             rootCorrectLbl.setVisible(false);
             rootTryAgainLbl.setVisible(true);
             root2Question.setVisible(false);
@@ -69,6 +69,7 @@ public class rootController
             root2AnswerBtn.setVisible(false);
             rHBox.setVisible(false);
             nextBtn.setVisible(false);
+
         }
     }
 

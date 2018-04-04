@@ -82,7 +82,7 @@
                   <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now you'll be able to see the contents of the file.&#10;&#10;You can now get root access with the sudo command. &#10;&#10;The command su will log you in as root (if no username is speccified) and as long as you know the password. If you type in a username you'll then login with that account. That way you can access root only files as the root user directly!&#10;&#10;Don't let anyone have the password to root, or have access to run sudo own their own account, only people you trust.&#10;&#10;You have a new computer and want to make a new account for a family member or sibling and want to give them sudo? Easy, just remember to change &lt;username&gt; with the username you are adding" wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now you'll be able to see the contents of the file.&#10;&#10;You can now get root access with the sudo command. &#10;&#10;The command su will log you in as root (if no username is speccified) and as long as you know the password. If you type in a username you'll then login with that account. That way you can access root only files as the root user directly!&#10;&#10;Don't let anyone have the password to root, or have access to run sudo own their own account, only people you trust.&#10;&#10;You have a new computer and want to make a new account for a family member or sibling and want to give them sudo? Easy, so lets use the 'adduser' command you just learnt to create the user first (remember to change &lt;username&gt; with the username you are adding)" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -95,7 +95,7 @@
                   <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This will create a new user, it will ask for things such as passwords after you type in this command. Feel free to ignore anything about name and address, or fill it in if you wish." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You already knew this. Now how do I give this account sudo power? Run the command again but with sudo on the end" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -160,35 +160,31 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox fx:id="rHBox1" prefHeight="100.0" prefWidth="468.0">
                <children>
-                  <HBox fx:id="rHBox1" prefHeight="100.0" prefWidth="468.0">
-                     <children>
-                        <Label fx:id="TryAgainLbl" prefHeight="30.0" prefWidth="110.0" text="Try again" textFill="WHITE">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-                           </HBox.margin>
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </Label>
-                        <Region prefHeight="137.0" prefWidth="198.0" />
-                        <Label fx:id="CorrectLbl" prefHeight="40.0" prefWidth="108.0" text="Correct!" textFill="WHITE">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-                           </HBox.margin>
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </Label>
-                     </children>
-                  </HBox>
+                  <Label fx:id="TryAgainLbl" prefHeight="30.0" prefWidth="110.0" text="Try again" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Region prefHeight="137.0" prefWidth="198.0" />
+                  <Label fx:id="CorrectLbl" prefHeight="40.0" prefWidth="108.0" text="Correct!" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
                </children>
             </HBox>
             <Button fx:id="AnswerBtn" mnemonicParsing="false" onAction="#AnswerBtnClick" text="Check Answer">

@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.whatisController">
@@ -39,6 +40,14 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
+            <Label text="Whatis" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
          </children>
       </VBox>
    </top>
@@ -56,7 +65,40 @@
    <left>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Template Text" wrappingWidth="325.0" VBox.vgrow="ALWAYS" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There have been a lot of commands so far. Even more to learn yet too&#10;&#10;If ever you're confused or doubtful about what a command does you can use the whatis command. For example, you want a description about the touch command you would type in" wrappingWidth="424.0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="whatis touch" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="18.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It gives you a short description about the command. It is taken from the man page.&#10;&#10;It is a way of remembering about the command without the huge wall of text to read through" wrappingWidth="424.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Region prefHeight="83.0" prefWidth="441.0" />
+            <Label text="Alias" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Some commands can get really repetitive, especially when they're really long or contain lots of flags&#10;&#10;Luckily you can create an alias, once you create an alias for a command, when you run the alias it will run the full command for you saving you precious seconds in your day&#10;" wrappingWidth="441.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -67,7 +109,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="379.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="582.0" prefWidth="486.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -75,12 +117,92 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Region prefHeight="196.0" prefWidth="347.0" />
-            <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
-               <padding>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </padding>
-            </Button>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="alias lsa='ls -la'" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Now instead of typing " wrappingWidth="441.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="alias lsa='ls -la'" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="you can type" wrappingWidth="441.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="lsa" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This doesn't save after a reboot though, if you want it to be perminant you have to save it in" wrappingWidth="441.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="~/.bashrc" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also remove an alias with the unalias command (remember to change 'lsa' to whatever alias you made)" wrappingWidth="441.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="unalias lsa" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="557.0" prefWidth="470.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="52.0" prefWidth="418.0" />
+                  <Button fx:id="nextBtn1" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </right>
