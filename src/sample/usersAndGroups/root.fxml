@@ -41,7 +41,7 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="root" textFill="WHITE">
+            <Label text="Adding an account to sudo" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -69,7 +69,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You want to make an account with sudo for your brother, James. What is the command to make an account called james?" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You want to make an account with sudo for your brother, James. What would you type in the terminal to make an account called &quot;james&quot; using the adduser command?" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -120,6 +120,9 @@
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
             </Button>
             <Region prefHeight="278.0" prefWidth="468.0" />
             <Button fx:id="rootBackBtn" mnemonicParsing="false" onAction="#rootBackBtnClick" prefHeight="27.0" prefWidth="60.0" text="Back">
@@ -145,11 +148,13 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Region prefHeight="61.0" prefWidth="451.0" />
             <Text fx:id="root2Question" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Now you have made the account called james, add it to the sudoers file with the command you just learnt on the previous page" wrappingWidth="440.0">
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
             <TextField fx:id="root2AnswerBox">
                <padding>
@@ -172,7 +177,7 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
                   </Label>
-                  <Region prefHeight="137.0" prefWidth="198.0" />
+                  <Region prefHeight="21.0" prefWidth="249.0" />
                   <Label fx:id="root2CorrectLbl" prefHeight="40.0" prefWidth="108.0" text="Correct!" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
@@ -190,8 +195,11 @@
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
             </Button>
-            <Region prefHeight="146.0" prefWidth="489.0" />
+            <Region prefHeight="215.0" prefWidth="489.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Region prefHeight="74.0" prefWidth="370.0" />

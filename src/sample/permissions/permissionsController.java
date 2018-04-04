@@ -13,7 +13,7 @@ public class permissionsController
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("/permissions/modifyingPermissions.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

@@ -96,7 +96,7 @@ public class rootController
     public void rootBackBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) rootBackBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGoupsCont.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGroupsCont.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
     public Button nextBtn;
@@ -104,7 +104,7 @@ public class rootController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/etcGroup.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/etcPasswd.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 }
