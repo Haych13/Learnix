@@ -17,5 +17,11 @@ public class compressedFilesController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-
+    public Button nextBtn;
+    public void nextBtnClick() throws IOException
+    {
+        Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/fromSourceCode.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
 }

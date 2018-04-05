@@ -8,6 +8,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -39,7 +40,7 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="Users and Groups" textFill="WHITE">
+            <Label text="dpkg &amp; rpm" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -67,7 +68,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In any traditional operating system, there are users and groups. They exist solely for access and permissions. When running a process, it will run as the owner of that process whether that is Jane or Bob. File access and ownership is also permission dependent. You wouldn't want Jane to see Bob's documents and vice versa.&#10;&#10;Each user has their own home directory where their user specific files get stored, this is usually located in /home/username, but can vary in different distributions.&#10;&#10;The system uses user ids (UID) to manage users, usernames are the friendly way to associate users with identification, but the system identifies users by their UID. The system also uses groups to manage permissions, groups are just sets of users with permission set by that group, they are identified by the system with their group ID (GID).&#10;&#10;In Linux, you'll have users in addition to the normal humans that use the system. Sometimes these users are system daemons that continuously run processes to keep the system functioning. One of the most important users is root or superuser, root is the most powerful user on the system, root can access any file and start and terminate any process. For that reason, it can be dangerous to operate as root all the time, you could potentially remove system critical files. Luckily, if root access is needed and a user has root access, they can run a command as root instead with the sudo command. The sudo command (superuser do) is used to run a command with root access, we'll go more in depth on how a user receives root access in a later lesson.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Although most of this course is about package management systems (the Batmans of package management), we mustn't forget about the Robins. Although very useful and reliable, they don't come with that sweet batmobile and utility belt.&#10;&#10;Just like .exe is a single executable file, so is .deb and .rpm. You normally wouldn't see these if you use package repositories, but if you directly download packages, you will most likely get them in these popular format. Obviously, they are exclusive to their distributions, .deb for Debian based and .rpm for Red Hat based.&#10;&#10;To install these direct packages, you can use the package management commands: rpm and dpkg. These tools are used to install package files, however they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies and so on and so forth. As you can see, that was one of the reasons that brought forth the full blown management systems that we will discuss this later.&#10;&#10;Keep in mind that there will be countless times when you need to install, query or verify a package with one of these tools, so remember these commands.&#10;&#10;Install a package&#10;&#10;Debian: $ dpkg -i some_deb_package.deb&#10;&#10;RPM: $ rpm -i some_rpm_package.rpm&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -92,7 +93,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Go ahead and try to view a protected file like /etc/shadow:&#10;&#10;$ cat /etc/shadow&#10;&#10;Notice how you get a permission denied error, look at the permissions with:&#10;&#10;$ ls -la /etc/shadow&#10;&#10;&#10;&#10;-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow&#10;&#10;We haven't gone through permissions yet, but what's happening here is that root is the owner of the file and you'll need root access or be part of the shadow group to read the contents. Now run the command with sudo:&#10;&#10;$ sudo cat /etc/shadow&#10;&#10;Now you'll be able to see the contents of the file!" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The i stands for install. You can also use the longer format of --install.&#10;&#10;Remove a package&#10;&#10;Debian: $ dpkg -r some_deb_package.deb&#10;&#10;RPM: $ rpm -e some_rpm_package.rpm&#10;&#10;Debian: r for remove &#10;RPM: e for erase&#10;&#10;List installed packages&#10;&#10;&#10;Debian: $ dpkg -l&#10;&#10;RPM: $ rpm -qa&#10;&#10;Debian: l for list &#10;RPM: q for query and a for all" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -100,6 +101,20 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
+            <Region prefHeight="473.0" prefWidth="449.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="52.0" prefWidth="418.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </right>

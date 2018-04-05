@@ -17,5 +17,12 @@ public class systemPackagesController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-
+    public Button nextBtn;
+    public void nextBtnClick() throws IOException
+    {
+        System.out.println("You have clicked systemPackagesBtn");
+        Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/repositories.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
 }

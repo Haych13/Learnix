@@ -8,6 +8,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -39,7 +40,7 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="Users and Groups" textFill="WHITE">
+            <Label text="Compressed Files" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -67,7 +68,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In any traditional operating system, there are users and groups. They exist solely for access and permissions. When running a process, it will run as the owner of that process whether that is Jane or Bob. File access and ownership is also permission dependent. You wouldn't want Jane to see Bob's documents and vice versa.&#10;&#10;Each user has their own home directory where their user specific files get stored, this is usually located in /home/username, but can vary in different distributions.&#10;&#10;The system uses user ids (UID) to manage users, usernames are the friendly way to associate users with identification, but the system identifies users by their UID. The system also uses groups to manage permissions, groups are just sets of users with permission set by that group, they are identified by the system with their group ID (GID).&#10;&#10;In Linux, you'll have users in addition to the normal humans that use the system. Sometimes these users are system daemons that continuously run processes to keep the system functioning. One of the most important users is root or superuser, root is the most powerful user on the system, root can access any file and start and terminate any process. For that reason, it can be dangerous to operate as root all the time, you could potentially remove system critical files. Luckily, if root access is needed and a user has root access, they can run a command as root instead with the sudo command. The sudo command (superuser do) is used to run a command with root access, we'll go more in depth on how a user receives root access in a later lesson.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Before we get into package installation and the different managers, we need to discuss archiving and compressing files, because you will most likely encounter these when you hunt for software on the internet.&#10;&#10;You probably already know what a file archive is, you've most likely encountered file types such as .rar and .zip. These are an archive of files, they contain many files inside of them, but they come in this very neat single file known as an archive.&#10;&#10;Compressing files with gzip&#10;&#10;gzip is program used to compress files in Linux, they end in a .gz extension.&#10;&#10;To compress a file down: &#10;&#10;$ gzip mycoolfile&#10;To decompress the file: &#10;&#10;$ gunzip mycoolfile.gz&#10;&#10;Creating archives with tar &#10;Unfortunately, gzip can't add multiple files into one archive for us. Luckily we have the tar program which does. When you create an archive using tar, it will have a .tar extension.&#10;&#10;$ tar cvf mytarfile.tar mycoolfile1 mycoolfile2&#10;c - create&#10;v - tell the program to be verbose and let us see what it's doing&#10;f - the filename of the tar file has to come after this option, if you are creating a tar file you'll have to come up with a name&#10;Unpacking archives with tar" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -92,7 +93,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Go ahead and try to view a protected file like /etc/shadow:&#10;&#10;$ cat /etc/shadow&#10;&#10;Notice how you get a permission denied error, look at the permissions with:&#10;&#10;$ ls -la /etc/shadow&#10;&#10;&#10;&#10;-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow&#10;&#10;We haven't gone through permissions yet, but what's happening here is that root is the owner of the file and you'll need root access or be part of the shadow group to read the contents. Now run the command with sudo:&#10;&#10;$ sudo cat /etc/shadow&#10;&#10;Now you'll be able to see the contents of the file!" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To extract the contents of a tar file, use:&#10;&#10;$ tar xvf mytarfile.tar&#10;x - extract&#10;v - tell the program to be verbose and let us see what it's doing&#10;f - the file you want to extract&#10;&#10;Compressing/uncompressing archives with tar and gzip&#10;&#10;Many times you'll see a tar file that has been compressed such as: mycompressedarchive.tar.gz, all you need to do is work outside in, so first remove the compression with gunzip and then you can unpack the tar file. Or you can alternatively use the z option with tar, which just tells it to use the gzip or gunzip utility.&#10;&#10;Create a compressed tar file: &#10;&#10;$ tar czf myfile.tar.gz&#10;Uncompress and unpack: &#10;&#10;$ tar xzf file.tar&#10;If you need help remember this: eXtract all Zee Files!&#10;&#10;tar is one of those commands that is so important and yet you never really remember it, relevant xkcd: https://xkcd.com/1168/&#10;&#10;Other Utilities&#10;&#10;Throughout your journey of Linux, you'll encounter other archive and compression types such as: bzip2, compress, zip, unzip, etc. They are a little less common, but just keep in mind that different utilities will call for different commands." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -100,6 +101,20 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
+            <Region prefHeight="473.0" prefWidth="449.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="52.0" prefWidth="418.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </right>

@@ -69,7 +69,7 @@ public class lessonsController
     {
         System.out.println("You have clicked systemPackagesBtn");
         Stage primaryStage = (Stage) systemPackagesBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("comingSoon.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/systemPackages.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
