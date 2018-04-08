@@ -14,19 +14,19 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Help" />
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <HBox spacing="10.0" style="-fx-background-color: Gray;">
                <children>

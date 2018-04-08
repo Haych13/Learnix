@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aptYumController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aptYumController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -68,7 +68,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ah, the Batmans of package management, these systems come with all the fixins to make package installation, removal and changes easier, including installing package dependencies. Two of the most popular management systems is yum and apt. Yum is exclusive to the Red Hat family and apt is exclusively to the Debian family.&#10;&#10;Install a package from a repository&#10;&#10;&#10;Debian: $ apt install package_name&#10;&#10;RPM: $ yum install package_name&#10;&#10;Remove a package&#10;&#10;&#10;Debian: $ apt remove package_name&#10;&#10;RPM: $ yum erase package_name&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The two most popular package management systems are Apt and Yum. As mentioned previously, Apt is part of the Debian line of operating systems, such as Debian, Ubuntu, Linux Mint, and more. &#10;&#10;Yum is part of Red Hat, such as Red Hat Enterprise Linux, Fedora, CentOS, and more.&#10;&#10;To install a package it’s pretty much the same on both apt and yum.&#10;&#10;sudo apt-get install &lt;packagename&gt;&#10;sudo yum install &lt;packagename&gt;&#10;&#10;On older systems they only used apt-get, but apt is a newer streamlined version, for day to day use you wouldn’t notice much of a difference except apt (not apt-get) has a nice percentage gauge at the bottom of the terminal telling you how close it is to completion. On some recent versions of Fedora ‘yum’ has been replaced with ‘dnf’, it works the same and has the same interface, just replace ‘yum’ with ‘dnf’&#10;&#10;I can install software but I no longer want it, how do I remove it? &#10;&#10;sudo apt remove &lt;packagename&gt;&#10;sudo yum erase &lt;packagename&gt;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -93,7 +93,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Updating packages for a repository&#10;&#10;It's always best practice to update your package repositories so they are up to date before you install and update a package.&#10;&#10;&#10;Debian: apt update; apt upgrade&#10;&#10;RPM: yum update&#10;&#10;Get information about an installed package&#10;&#10;&#10;Debian: apt show package_name&#10;&#10;RPM: yum info package_name&#10;" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;You can install and remove software, but they don’t update on their own, but luckily there is a nice easy command to do that for you.&#10;&#10;sudo apt update&#10;sudo yum update&#10;&#10;This command updates your package repositories, this basically lets your system know what needs to update, what doesn’t need to update, and what software is no longer needed. With Yum it will then ask if you want to apply any updates it finds, with apt you have to use one extra step.&#10;&#10;sudo apt upgrade&#10;&#10;This command will let you know what updates needs to be downloaded and will ask you if you wish for them to be installed." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

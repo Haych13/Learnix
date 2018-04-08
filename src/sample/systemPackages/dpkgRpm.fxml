@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dpkgRpmController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dpkgRpmController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -68,7 +68,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Although most of this course is about package management systems (the Batmans of package management), we mustn't forget about the Robins. Although very useful and reliable, they don't come with that sweet batmobile and utility belt.&#10;&#10;Just like .exe is a single executable file, so is .deb and .rpm. You normally wouldn't see these if you use package repositories, but if you directly download packages, you will most likely get them in these popular format. Obviously, they are exclusive to their distributions, .deb for Debian based and .rpm for Red Hat based.&#10;&#10;To install these direct packages, you can use the package management commands: rpm and dpkg. These tools are used to install package files, however they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies and so on and so forth. As you can see, that was one of the reasons that brought forth the full blown management systems that we will discuss this later.&#10;&#10;Keep in mind that there will be countless times when you need to install, query or verify a package with one of these tools, so remember these commands.&#10;&#10;Install a package&#10;&#10;Debian: $ dpkg -i some_deb_package.deb&#10;&#10;RPM: $ rpm -i some_rpm_package.rpm&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So you just learnt the easiest way to install software over the terminal. But not everything is in your repository so you have to download it and install it yourself, you won’t often see this if you stick to the package repositories. If you’ve used Windows you’ll most likely have come across .exe, and if you’re used to MacOS then .dmg. &#10;&#10;.deb and .rpm is essentially the same thing, but you can still install them via the terminal. Just like with apt and yum each one is exclusive to it’s distribution. .deb is from Debian, and .rpm from Red Hat.&#10;&#10;There is a major problem with installing software this way, they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies, and so on. This was one of the reasons that brought forward the package management systems such as apt &amp; yum.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -93,7 +93,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The i stands for install. You can also use the longer format of --install.&#10;&#10;Remove a package&#10;&#10;Debian: $ dpkg -r some_deb_package.deb&#10;&#10;RPM: $ rpm -e some_rpm_package.rpm&#10;&#10;Debian: r for remove &#10;RPM: e for erase&#10;&#10;List installed packages&#10;&#10;&#10;Debian: $ dpkg -l&#10;&#10;RPM: $ rpm -qa&#10;&#10;Debian: l for list &#10;RPM: q for query and a for all" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, to install a package you use these commands&#10;&#10;sudo dpkg -i &lt;package.deb&gt;&#10;&#10;sudo rpm -i &lt;package.deb&gt;&#10;&#10;The ‘-i’ flag is for install.&#10;&#10;To remove a package&#10;&#10;&#10;sudo dpkg -r &lt;package.deb&gt;&#10;&#10;sudo rpm -e &lt;package.deb&gt;&#10;&#10;The ‘-r’ flag on dpkg stands for remove, with RPM the ‘-e’- flag means erase. " wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

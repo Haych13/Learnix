@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dependenciesController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dependenciesController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -68,7 +68,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Packages very rarely work by themselves, they are most often accompanied by dependencies to help them run. For example, let's say we have a group of restaurants, these restaurants all make different cuisine, however they all get their ingredients from the same farm. Their food is dependent on the farm's supplies, if the farm were to suddenly stop supplying food, well then the restaurants would be in a pretty bad state.&#10;&#10;In Linux, these dependencies are often other packages or shared libraries. Shared libraries are libraries of code that other programs want to use and don't want to have to rewrite for themselves. Think of the restaurant again, how much work would it be if every restaurant also farmed their own food? Too much." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Packages can’t always run by themselves, they often need dependencies to help them run. &#10;&#10;Sometimes when you install programs, they rely on other programs to work. These other programs are called dependencies. For example, if a developer wanted to create an instant messenger application and wants to encrypt their messages between users, instead of having to create the encryption themselves they can use a package someone else has written that will do them encryption for them. So, you download their messeaging application but you also need to download the package to encrypt the message, the instant messenger is dependent on the encryption program.&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -93,7 +93,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="We will dig more into shared libraries in the filesystem course, so for now just remember that packages have dependencies to help them run, whether those dependencies are other packages or libraries, if the dependencies aren't there the package will end up in a broken state and most of the time not even install.&#10;&#10;" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="When you go to install software from the repository, the system installs the program, if it notices it is dependent on another program it will install both at the same same so you don’t have to install it yourself. &#10;&#10;" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

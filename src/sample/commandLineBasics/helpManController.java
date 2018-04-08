@@ -1,4 +1,4 @@
-package sample.commandLineBasics;
+package sample;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,7 +9,6 @@ import java.io.IOException;
 public class helpManController
 {
     public Button backBtn;
-
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();

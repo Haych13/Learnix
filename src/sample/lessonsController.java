@@ -3,8 +3,13 @@ package sample;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
+
+import java.awt.*;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 public class lessonsController
 {
@@ -21,9 +26,16 @@ public class lessonsController
     public void practiceTestBtnClick() throws IOException
     {
         System.out.println("You have clicked practiceTestBtn");
-        Stage primaryStage = (Stage) practiceTestBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("practiceTest/practiceTest.fxml"));
-        primaryStage.getScene().setRoot(newRoot);
+        {
+            System.out.println("You have clicked HelpBtn");
+            try {
+                Desktop.getDesktop().browse(new URL("https://goo.gl/forms/DsNFP94CscyyOSs63").toURI());
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        } //This opens a link to the test in which I will review test subject score
 
     }
 
@@ -73,12 +85,48 @@ public class lessonsController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-    //Attempted to get the "About" in the "help" menu to paste to the console when clicked but it just crashed instead.
-   /*public Button aboutLearnix;
-    public void aboutLearnixClicked() throws IOException
+
+/*    public Menu FileBtn;
+    public void FileBtnClick() throws IOException
     {
-        System.out.println("You have clicked aboutLearnix");
-    }*/
+        System.out.println("You have clicked FileBtn");
+    }
+    // This (when clicking help or close) then prints the statement, but not on file alone.
+*/
 
+    public MenuItem HelpBtn;
+    public void HelpBtnClick()
+    {
+        System.out.println("You have clicked HelpBtn");
+        try {
+            Desktop.getDesktop().browse(new URL("https://haych13.github.io/Learnix").toURI());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }//https://goo.gl/forms/DsNFP94CscyyOSs63
+   } //This opens a link to the Learnix website
 
+    public MenuItem CloseBtn;
+    public void CloseBtnClick()
+    {
+        System.out.println("You have clicked CloseBtn");
+        System.exit(0);
+    } //This closes the application
+
+    public Button onlineCLIBtn;
+    public void onlineCLIBtnClick() throws IOException
+    {
+        System.out.println("You have clicked practiceTestBtn");
+        {
+            System.out.println("You have clicked HelpBtn");
+            try {
+                Desktop.getDesktop().browse(new URL("https://linuxcontainers.org/lxd/try-it/").toURI());
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            }
+        } //This opens a link to an online CLI for users to use if they can't use one on their current OS
+    }
 }
