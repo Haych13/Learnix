@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-public class dpkgRpmController
+public class compressedFilesContController
 {
     public Button backBtn;
 
@@ -26,7 +26,7 @@ public class dpkgRpmController
     public void nextBtnClick() throws IOException
     {
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/compressedFiles.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/fromSourceCode.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

@@ -13,28 +13,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.compressedFilesController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.compressedFilesController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -68,7 +59,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Before we get into package installation and the different managers, we need to discuss archiving and compressing files, because you will most likely encounter these when you hunt for software on the internet.&#10;&#10;You probably already know what a file archive is, you've most likely encountered file types such as .rar and .zip. These are an archive of files, they contain many files inside of them, but they come in this very neat single file known as an archive.&#10;&#10;Compressing files with gzip&#10;&#10;gzip is program used to compress files in Linux, they end in a .gz extension.&#10;&#10;To compress a file down: &#10;&#10;$ gzip mycoolfile&#10;To decompress the file: &#10;&#10;$ gunzip mycoolfile.gz&#10;&#10;Creating archives with tar &#10;Unfortunately, gzip can't add multiple files into one archive for us. Luckily we have the tar program which does. When you create an archive using tar, it will have a .tar extension.&#10;&#10;$ tar cvf mytarfile.tar mycoolfile1 mycoolfile2&#10;c - create&#10;v - tell the program to be verbose and let us see what it's doing&#10;f - the filename of the tar file has to come after this option, if you are creating a tar file you'll have to come up with a name&#10;Unpacking archives with tar" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Many files online that you come across are often archived (compressed), you may know .zip or .rar files. If you don’t, an archive is an archive of files, inside of an archive you will find many files. An archive is an easy way of sending multiple files in one easy download. They can also compress file sizes, making them smaller to download than the full file sizes on their own.&#10;&#10;On GNU/Linux you can use gzip to compress files. Instead of .zip they use .gz.&#10;&#10;To compress a file down run gzip and the name of the file you want to compress&#10;&#10;gzip homework&#10;&#10;To decompress the file you use gunzip (g un-zip) and the name of the file. &#10;&#10;gunzip homework.gz&#10;&#10;That’s all well and good for compressing file sizes, but gzip can’t add multiple files, luckily there is another way, it’s called tar. Tar is a little more complicated than gzip. (Remember man pages if you want to learn more about a command: man tar)&#10;&#10;&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -93,7 +84,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To extract the contents of a tar file, use:&#10;&#10;$ tar xvf mytarfile.tar&#10;x - extract&#10;v - tell the program to be verbose and let us see what it's doing&#10;f - the file you want to extract&#10;&#10;Compressing/uncompressing archives with tar and gzip&#10;&#10;Many times you'll see a tar file that has been compressed such as: mycompressedarchive.tar.gz, all you need to do is work outside in, so first remove the compression with gunzip and then you can unpack the tar file. Or you can alternatively use the z option with tar, which just tells it to use the gzip or gunzip utility.&#10;&#10;Create a compressed tar file: &#10;&#10;$ tar czf myfile.tar.gz&#10;Uncompress and unpack: &#10;&#10;$ tar xzf file.tar&#10;If you need help remember this: eXtract all Zee Files!&#10;&#10;tar is one of those commands that is so important and yet you never really remember it, relevant xkcd: https://xkcd.com/1168/&#10;&#10;Other Utilities&#10;&#10;Throughout your journey of Linux, you'll encounter other archive and compression types such as: bzip2, compress, zip, unzip, etc. They are a little less common, but just keep in mind that different utilities will call for different commands." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets say you want to send some pictures to a friend, it’s easier to send them in a single .tar rather than 3 separate downloads. Use the tar command, the appropriate flags, then the name of what you want the archive to be called. Leave spaces between that, then each file you want to add.&#10;&#10;tar -cvf holidaysnaps.tar holidayphoto1 holidayphoto2 holiday photo3&#10;&#10;The flags used:&#10;&#10;c – Create, this is because you want to create a new archive&#10;v -  Vervose, this tell the program to be verbose and let us see what it's doing&#10;f -  Filename, this means you can create a filename for your .tar file.&#10;&#10;To extract the contents of a tar file, use:&#10;&#10; tar -xvf myholidaysnaps.tar&#10;&#10;x – Extract&#10;v – Verbose, this tell the program to be verbose and let us see what it's doing&#10;f -  Filename, tells tar that the next parameter is the file name of the archive" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
