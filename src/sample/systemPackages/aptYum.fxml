@@ -6,6 +6,8 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -13,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aptYumController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aptYumController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -36,10 +38,10 @@
                   <Font size="24.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets />
                </VBox.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -59,13 +61,37 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The two most popular package management systems are Apt and Yum. As mentioned previously, Apt is part of the Debian line of operating systems, such as Debian, Ubuntu, Linux Mint, and more. &#10;&#10;Yum is part of Red Hat, such as Red Hat Enterprise Linux, Fedora, CentOS, and more.&#10;&#10;To install a package it’s pretty much the same on both apt and yum.&#10;&#10;sudo apt-get install &lt;packagename&gt;&#10;sudo yum install &lt;packagename&gt;&#10;&#10;On older systems they only used apt-get, but apt is a newer streamlined version, for day to day use you wouldn’t notice much of a difference except apt (not apt-get) has a nice percentage gauge at the bottom of the terminal telling you how close it is to completion. On some recent versions of Fedora ‘yum’ has been replaced with ‘dnf’, it works the same and has the same interface, just replace ‘yum’ with ‘dnf’&#10;&#10;I can install software but I no longer want it, how do I remove it? &#10;&#10;sudo apt remove &lt;packagename&gt;&#10;sudo yum erase &lt;packagename&gt;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The two most popular package management systems are Apt and Yum. As mentioned previously, Apt is part of the Debian line of operating systems, such as Debian, Ubuntu, Linux Mint, and more. &#10;&#10;Yum is part of Red Hat, such as Red Hat Enterprise Linux, Fedora, CentOS, and more.&#10;&#10;To install a package it’s pretty much the same on both apt and yum." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo apt-get install &lt;packagename&gt;&#10;sudo yum install &lt;packagename&gt;" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On older systems they only used apt-get, but apt is a newer streamlined version, for day to day use you wouldn’t notice much of a difference except apt (not apt-get) has a nice percentage gauge at the bottom of the terminal telling you how close it is to completion. On some recent versions of Fedora ‘yum’ has been replaced with ‘dnf’, it works the same and has the same interface, just replace ‘yum’ with ‘dnf’&#10;&#10;I can install software but I no longer want it, how do I remove it? " wrappingWidth="470.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo apt remove &lt;packagename&gt;&#10;sudo yum erase &lt;packagename&gt;" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -84,7 +110,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;You can install and remove software, but they don’t update on their own, but luckily there is a nice easy command to do that for you.&#10;&#10;sudo apt update&#10;sudo yum update&#10;&#10;This command updates your package repositories, this basically lets your system know what needs to update, what doesn’t need to update, and what software is no longer needed. With Yum it will then ask if you want to apply any updates it finds, with apt you have to use one extra step.&#10;&#10;sudo apt upgrade&#10;&#10;This command will let you know what updates needs to be downloaded and will ask you if you wish for them to be installed." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can install and remove software, but they don’t update on their own, but luckily there is a nice easy command to do that for you." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -92,11 +118,64 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <Region prefHeight="473.0" prefWidth="449.0" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo apt update&#10;sudo yum update" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command updates your package repositories, this basically lets your system know what needs to update, what doesn’t need to update, and what software is no longer needed. With Yum it will then ask if you want to apply any updates it finds, with apt you have to use one extra step." wrappingWidth="456.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo apt upgrade" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command will let you know what updates needs to be downloaded and will ask you if you wish for them to be installed." wrappingWidth="456.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="76.0" prefWidth="480.0">
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/debianPackage.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region prefHeight="131.0" prefWidth="116.0" />
+                  <ImageView fitHeight="97.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/rpmPackage.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Region prefHeight="228.0" prefWidth="480.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="52.0" prefWidth="418.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="37.0" prefWidth="344.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

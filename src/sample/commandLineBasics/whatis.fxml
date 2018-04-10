@@ -13,28 +13,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.whatisController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.whatisController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -70,7 +61,7 @@
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets top="5.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="whatis touch" wrappingWidth="325.0">
                <font>
@@ -84,14 +75,17 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
-            <Region prefHeight="83.0" prefWidth="441.0" />
+            <Region prefHeight="65.0" prefWidth="441.0" />
             <Label text="Alias" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Some commands can get really repetitive, especially when they're really long or contain lots of flags&#10;&#10;Luckily you can create an alias, once you create an alias for a command, when you run the alias it will run the full command for you saving you precious seconds in your day&#10;" wrappingWidth="441.0">
@@ -157,7 +151,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This doesn't save after a reboot though, if you want it to be perminant you have to save it in" wrappingWidth="441.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This doesn't save after a reboot though, if you want it to be permanent you have to save it in" wrappingWidth="441.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -192,8 +186,8 @@
             <Region prefHeight="557.0" prefWidth="470.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="52.0" prefWidth="418.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="0.0" prefWidth="348.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

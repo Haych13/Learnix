@@ -4,7 +4,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.awt.*;
@@ -12,7 +11,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-public class managingUsersController
+public class fromSourceCodeContController
 {
     public Button backBtn;
 
@@ -23,45 +22,20 @@ public class managingUsersController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-    public javafx.scene.control.Label CorrectLbl;
-    public javafx.scene.control.Label TryAgainLbl;
-
-    public void initialize() //Sets the labels and button to be hidden on the start of the scene so only a right answer makes it appear
-    {
-        CorrectLbl.setVisible(false);
-        TryAgainLbl.setVisible(false);
-        nextBtn.setVisible(false);
-    }
-
-    public TextField AnswerBox;
-
-    public Button AnswerBtn;
-    public void AnswerBtnClick()
-    {
-        System.out.println("AnswerBtnClick has been clicked");
-        if (AnswerBox.getText().equals("passwd"))
-        {
-            System.out.println("Correct");
-            CorrectLbl.setVisible(true);
-            TryAgainLbl.setVisible(false);
-            nextBtn.setVisible(true);
-        }
-        else
-        {
-            System.out.println("Try again");
-            CorrectLbl.setVisible(false);
-            TryAgainLbl.setVisible(true);
-            nextBtn.setVisible(false);
-        }
-
-    }
-
     public Button nextBtn;
     public void nextBtnClick() throws IOException
     {
-        System.out.println("You are now in usersAndGroupsCont");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGroups.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/fromSourceCodeCont.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
+
+    public Button cdBackBtn;
+    public void cdBackBtnClick() throws IOException
+    {
+        System.out.println("You are back to the lessons screen");
+        Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/fromSourceCode.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -75,7 +49,7 @@ public class managingUsersController
             e.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }
+        }//https://goo.gl/forms/DsNFP94CscyyOSs63
     } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;

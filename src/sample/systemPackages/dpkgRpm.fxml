@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dpkgRpmController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dpkgRpmController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -36,10 +36,10 @@
                   <Font size="24.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets />
                </VBox.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -59,7 +59,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So you just learnt the easiest way to install software over the terminal. But not everything is in your repository so you have to download it and install it yourself, you won’t often see this if you stick to the package repositories. If you’ve used Windows you’ll most likely have come across .exe, and if you’re used to MacOS then .dmg. &#10;&#10;.deb and .rpm is essentially the same thing, but you can still install them via the terminal. Just like with apt and yum each one is exclusive to it’s distribution. .deb is from Debian, and .rpm from Red Hat.&#10;&#10;There is a major problem with installing software this way, they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies, and so on. This was one of the reasons that brought forward the package management systems such as apt &amp; yum.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So you just learnt the easiest way to install software over the terminal. But not everything is in your repository so you have to download it and install it yourself, you won’t often see this if you stick to the package repositories. &#10;&#10;If you’ve used Windows you’ll most likely have come across .exe, and if you’re used to MacOS then .dmg. &#10;&#10;.deb and .rpm is essentially the same thing, but you can still install them via the terminal. &#10;&#10;Just like with apt and yum each one is exclusive to it’s distribution. .deb is from Debian, and .rpm from Red Hat.&#10;&#10;There is a major problem with installing software this way, they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies, and so on. &#10;&#10;This was one of the reasons that brought forward the package management systems such as apt &amp; yum.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -84,7 +84,39 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, to install a package you use these commands&#10;&#10;sudo dpkg -i &lt;package.deb&gt;&#10;&#10;sudo rpm -i &lt;package.deb&gt;&#10;&#10;The ‘-i’ flag is for install.&#10;&#10;To remove a package&#10;&#10;&#10;sudo dpkg -r &lt;package.deb&gt;&#10;&#10;sudo rpm -e &lt;package.deb&gt;&#10;&#10;The ‘-r’ flag on dpkg stands for remove, with RPM the ‘-e’- flag means erase. " wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, to install a package you use these commands, remember, dpkg for Debian, rpm for Red Hat!" wrappingWidth="456.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo dpkg -i &lt;package.deb&gt;&#10;&#10;sudo rpm -i &lt;package.deb&gt;" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To then remove a package you use these commands" wrappingWidth="456.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo dpkg -r &lt;package.deb&gt;&#10;&#10;sudo rpm -e &lt;package.deb&gt;" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The ‘-r’ flag on dpkg stands for remove, with RPM the ‘-e’- flag means erase. " wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -95,8 +127,8 @@
             <Region prefHeight="473.0" prefWidth="449.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="52.0" prefWidth="418.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="37.0" prefWidth="342.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

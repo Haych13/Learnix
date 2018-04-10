@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dependenciesController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.whatIsADistroController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -31,13 +31,10 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="Package Dependencies" textFill="WHITE">
+            <Label text="What is a Distribution?" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
@@ -57,9 +54,9 @@
       </HBox>
    </bottom>
    <left>
-      <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
+      <VBox BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Packages can’t always run by themselves, they often need dependencies to help them run. &#10;&#10;Sometimes when you install programs, they rely on other programs to work. These other programs are called dependencies. For example, if a developer wanted to create an instant messenger application and wants to encrypt their messages between users, instead of having to create the encryption themselves they can use a package someone else has written that will do them encryption for them. So, you download their messeaging application but you also need to download the package to encrypt the message, the instant messenger is dependent on the encryption program.&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You may have heard &quot;distribution&quot; thrown around when it comes to operating systems or more specifically, GNU/Linux. But what is a distro?&#10;&#10;Well, GNU/Linux isn't like Windows or Mac OS. There is only one release and each one gets more updated, you can pick Windows 10 over Windows 7 but they are the same, just one being more updated than the latter.&#10;&#10;With GNU/Linux you don't have just one version, different organisations and people work on different parts.&#10;&#10;GNU and Linux are open source meaning people can use and modify them &#10;&#10;You can get GNU, the Linux Kernel, and many other tools to compile them to create your own operating system but that takes a lot of time, that's why people do it for you.&#10;&#10;Each operating system made up with GNU/Linux, whilst being similar, is different. &#10;&#10;Some examples of GNU/Linux distros are:&#10;&#10;Ubuntu, Red Hat Enterprise Linux, Fedora, Debian, Linux Mint." wrappingWidth="424.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -76,7 +73,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="572.0" prefWidth="505.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="582.0" prefWidth="486.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -84,18 +81,15 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="When you go to install software from the repository, the system installs the program, if it notices it is dependent on another program it will install both at the same same so you don’t have to install it yourself. &#10;&#10;" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So why are there different distributions and not just one open source one?&#10;&#10;Well different people have different ideas. The Fedora operating system refuses to include any closed source software, other operating systems such as Linux Mint include some closed source software because it makes some things easier for users, such as accessing media.&#10;&#10;Some distros are forks of already existing ones. Ubuntu is an operating system in which at it's core is Debian, but it's been modified and made easier for general users to use. There are many distributions like this because it saves time making your own from scratch, or you like the pre-existing operating system but you just want to change a couple of things. &#10;&#10;They also include different software, Ubuntu will look different to Linux Mint. They'll each have their own package manager (this'll be covered later), in short a different way to install and update their software.&#10;&#10;If you don't understand, it's kind of like a Samsung smart phone compared to a Sony smart phone. They are both running on Android with the Linux Kernel but they both look different and include different apps (like text messengers)" wrappingWidth="424.0">
                <font>
                   <Font size="15.0" />
                </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
             </Text>
-            <Region prefHeight="473.0" prefWidth="449.0" />
+            <Region prefHeight="557.0" prefWidth="470.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="37.0" prefWidth="346.0" />
+                  <Region prefHeight="52.0" prefWidth="418.0" />
                   <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />

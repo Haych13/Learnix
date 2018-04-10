@@ -4,7 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.awt.*;
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-public class managingUsersController
+public class whatIsOpenSourceController
 {
     public Button backBtn;
 
@@ -22,48 +22,28 @@ public class managingUsersController
         Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
-
-    public javafx.scene.control.Label CorrectLbl;
-    public javafx.scene.control.Label TryAgainLbl;
-
-    public void initialize() //Sets the labels and button to be hidden on the start of the scene so only a right answer makes it appear
-    {
-        CorrectLbl.setVisible(false);
-        TryAgainLbl.setVisible(false);
-        nextBtn.setVisible(false);
-    }
-
-    public TextField AnswerBox;
-
-    public Button AnswerBtn;
-    public void AnswerBtnClick()
-    {
-        System.out.println("AnswerBtnClick has been clicked");
-        if (AnswerBox.getText().equals("passwd"))
-        {
-            System.out.println("Correct");
-            CorrectLbl.setVisible(true);
-            TryAgainLbl.setVisible(false);
-            nextBtn.setVisible(true);
-        }
-        else
-        {
-            System.out.println("Try again");
-            CorrectLbl.setVisible(false);
-            TryAgainLbl.setVisible(true);
-            nextBtn.setVisible(false);
-        }
-
-    }
-
+	
     public Button nextBtn;
     public void nextBtnClick() throws IOException
     {
-        System.out.println("You are now in usersAndGroupsCont");
+        System.out.println("You are now in cd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGroups.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
+
+    public Button openBtn;
+    public void openBtnClick()
+    {
+        System.out.println("You have clicked openBtn");
+        try {
+            Desktop.getDesktop().browse(new URL("https://opensource.org/osd").toURI());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+    } //This opens a link to the OSI website
 
     public MenuItem HelpBtn;
     public void HelpBtnClick()
@@ -84,4 +64,5 @@ public class managingUsersController
         System.out.println("You have clicked CloseBtn");
         System.exit(0);
     } //This closes the application
+
 }

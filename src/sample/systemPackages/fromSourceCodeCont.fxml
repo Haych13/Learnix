@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.reMoveController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.fromSourceCodeContController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -31,9 +31,9 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="rm - Remove" textFill="WHITE">
+            <Label text="Compiling from Source Code" textFill="WHITE">
                <font>
-                  <Font size="25.0" />
+                  <Font size="24.0" />
                </font>
                <VBox.margin>
                   <Insets />
@@ -57,50 +57,57 @@
       </HBox>
    </bottom>
    <left>
-      <VBox prefHeight="618.0" prefWidth="501.0" BorderPane.alignment="CENTER">
-         <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can now make files and directories, but what about deleting them?&#10;&#10;To delete files you use the rm (ReMove) command. Be careful, because there is no Recycle Bin here, once you delete a file it is gone. &#10;&#10;To delete a file use the rm command and then the name of the file" wrappingWidth="478.0" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin></Text>
-            <Text fill="WHITE" layoutX="48.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rm file" wrappingWidth="325.0">
-               <font>
-                  <Font name="Lucida Console" size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can’t just delete any and every file, luckily there are things in place to stop that, files can be “Write protected” and will ask for confirmation before you delete them.&#10;&#10;If you know for sure you want to delete the file and don’t care if it’s protected or not you can use the ‘-f’ flag, meaning force. This will delete the file instantly.&#10;" wrappingWidth="478.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" layoutX="48.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rm -f file" wrappingWidth="325.0">
-               <font>
-                  <Font name="Lucida Console" size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-               </VBox.margin>
-            </Text>
-         </children>
+      <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
          <padding>
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inside of the package there should be a file called Makefile that contains rules to building the software. When you run the make command, it looks at this file to build the software.To then install the package, run this next command. It will copy the correct files to the correct locations on your system." wrappingWidth="456.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo make install" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to uninstall the package it’s pretty much the same but use ‘uninstall’." wrappingWidth="456.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo make uninstall" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="530.0" prefWidth="468.0" />
+            <Button fx:id="cdBackBtn" mnemonicParsing="false" onAction="#cdBackBtnClick" prefHeight="35.0" prefWidth="135.0" text="Back">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </Button>
+         </children>
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="618.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="572.0" prefWidth="505.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -108,7 +115,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can add the ‘-i’ flag, this will ask if you want to delete the files or directories, it’s good if you are worried about deleting the wrong file.&#10;&#10;Well that’s easy, is it the same to delete a directory? Almost, to delete a directory you need to add the ‘-r’ flag, meaning recursive. This will delete all files and subdirectories there might me. " wrappingWidth="478.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Although, be careful about using make install. Because it installs lots of stuff in the background if you try to uninstall a package it might not get everything because it might miss some of the stuff it installed in the background. Instead you can use ‘checkinstall’, this command will make your own .deb file so you can install and uninstall it that way.&#10;&#10;" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -116,7 +123,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="rm -r directory" wrappingWidth="325.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudo checkinstall" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
                </font>
@@ -124,33 +131,16 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the directory is empty you can use the ‘rmdir’ (ReMove DIRectory) command." wrappingWidth="478.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" layoutX="48.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rmdir directory" wrappingWidth="325.0">
-               <font>
-                  <Font name="Lucida Console" size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-               </VBox.margin>
-            </Text>
-            <Region prefHeight="250.0" prefWidth="488.0" />
-            <HBox prefHeight="63.0" prefWidth="465.0">
+            <Region prefHeight="213.0" prefWidth="489.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="196.0" prefWidth="347.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="94.0" prefWidth="479.0" text="Congratulations you have completed this section! &#10;Back to lessons" textAlignment="CENTER">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
-                     <HBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
                   </Button>
                </children>
             </HBox>

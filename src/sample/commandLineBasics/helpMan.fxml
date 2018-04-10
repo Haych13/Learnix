@@ -13,28 +13,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.helpManController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.helpManController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -45,7 +36,7 @@
                   <Font size="24.0" />
                </font>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -63,12 +54,15 @@
       </HBox>
    </bottom>
    <left>
-      <VBox prefHeight="582.0" prefWidth="452.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="570.0" prefWidth="501.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There are some great tools within GNU/Linux to help you find out more about a command or check what flags you need for them&#10;&#10;The help tool is a built in too that will give you help about bash commands. Such as echo, logout, pwd, etc." wrappingWidth="427.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There are some great tools within GNU/Linux to help you find out more about a command or check what flags you need for them&#10;&#10;The help tool is a built in too that will give you help about bash commands. Such as echo, logout, pwd, etc." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
-               </font></Text>
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Text>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="help echo" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
@@ -77,10 +71,13 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It will give you a description and some options you can use when you run echo.&#10;&#10;For other executable programs the help comes after" wrappingWidth="427.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It will give you a description and some options you can use when you run echo.&#10;&#10;For other executable programs the help comes after" wrappingWidth="462.0">
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
             <Text fill="WHITE" layoutX="18.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="help --echo" wrappingWidth="325.0">
                <font>
@@ -90,7 +87,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not every developer uses the help command with the program.&#10;&#10;But luckily there is a high chance of them having a manual! A man page is a manual similar to help that will tell you about the command." wrappingWidth="427.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not every developer uses the help command with the program.&#10;&#10;But luckily there is a high chance of them having a manual! A man page is a manual similar to help that will tell you about the command." wrappingWidth="475.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -105,7 +102,7 @@
       </VBox>
    </left>
    <right>
-      <VBox prefHeight="582.0" prefWidth="541.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="570.0" prefWidth="487.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
@@ -121,10 +118,13 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Man pages are the most helpful tool within GNU/Linux!&#10;&#10;There is an alternative to man pages called info. It isn't very widley adopted but it's worth knowing it exists.&#10;&#10;There are overlaps between these three such as bash&#10;" wrappingWidth="427.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Man pages are the most helpful tool within GNU/Linux!&#10;&#10;There is an alternative to man pages called info. It isn't very widely adopted but it's worth knowing it exists.&#10;&#10;There are overlaps between these three such as bash&#10;" wrappingWidth="427.0">
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
             <Text fill="WHITE" layoutX="48.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bash --help&#10;man bash&#10;info bash" wrappingWidth="325.0">
                <font>
@@ -138,12 +138,15 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
             <Region prefHeight="300.0" prefWidth="524.0" />
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="100.0" prefWidth="135.0">
                <children>
-                  <Region prefHeight="52.0" prefWidth="418.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="37.0" prefWidth="330.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

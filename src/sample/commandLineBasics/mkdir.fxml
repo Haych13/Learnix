@@ -18,23 +18,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -45,7 +36,7 @@
                   <Font size="25.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets />
                </VBox.margin>
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
@@ -68,13 +59,29 @@
    <left>
       <VBox prefHeight="565.0" prefWidth="437.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can travel into Directories and work your way around them, but now it's time to learn how to make them.&#10;&#10;It's quite easy, same formula as before:&#10;&#10;&lt;command&gt; &lt;name&gt;&#10;&#10;As long as a Directory with the same name doesn't already exist it will make it. You can eeven make multiple Directories at the same time. " wrappingWidth="440.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can travel into Directories and work your way around them, but now it's time to learn how to make them.&#10;&#10;It's quite easy, same formula as before:" wrappingWidth="440.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;command&gt; &lt;name&gt;" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As long as a Directory with the same name doesn't already exist it will make it. You can even make multiple Directories at the same time. " wrappingWidth="440.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="mkdir Movies Holiday" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="15.0" />
@@ -83,7 +90,8 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Button fx:id="mkdirBackBtn" mnemonicParsing="false" onAction="#mkdirBackBtnClick" prefHeight="75.0" prefWidth="60.0" text="Back">
+            <Region prefHeight="244.0" prefWidth="450.0" />
+            <Button fx:id="mkdirBackBtn" mnemonicParsing="false" onAction="#mkdirBackBtnClick" prefHeight="35.0" prefWidth="130.0" text="Back">
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
@@ -138,10 +146,11 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
+            <Region prefHeight="225.0" prefWidth="492.0" />
             <HBox prefHeight="63.0" prefWidth="465.0">
                <children>
-                  <Region prefHeight="196.0" prefWidth="347.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="0.0" prefWidth="348.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

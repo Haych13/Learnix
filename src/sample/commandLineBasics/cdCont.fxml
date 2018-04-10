@@ -21,23 +21,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -60,15 +51,7 @@
    <left>
       <VBox prefHeight="618.0" prefWidth="525.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, you know how to change directory, but where do you start when you first open the Terminal? Root?" wrappingWidth="486.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nope, it's actually your home directory. If you run the command 'cd' on its own you'll come back to your home directory too." wrappingWidth="495.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, you know how to change directory, but where do you start when you first open the Terminal? &#10;&#10;Root?&#10;&#10;Nope, it's actually your home directory. &#10;&#10;If you run the command 'cd' on its own you'll come back to your home directory too." wrappingWidth="486.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -81,11 +64,11 @@
                   <Image url="@../Assets/cdAndPwd2.png" />
                </image>
                <VBox.margin>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                  <Insets bottom="30.0" left="70.0" right="30.0" top="60.0" />
                </VBox.margin>
             </ImageView>
             <Region prefHeight="263.0" prefWidth="509.0" />
-            <Button fx:id="cdBackBtn" mnemonicParsing="false" onAction="#cdBackBtnClick" prefHeight="75.0" prefWidth="60.0" text="Back">
+            <Button fx:id="cdBackBtn" mnemonicParsing="false" onAction="#cdBackBtnClick" prefHeight="35.0" prefWidth="135.0" text="Back">
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
@@ -115,6 +98,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
             <TextField fx:id="aCDAnswerBox">
                <padding>
@@ -163,6 +149,9 @@
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
             <TextField fx:id="rCDAnswerBox" layoutX="38.0" layoutY="101.0">
                <padding>
@@ -206,10 +195,10 @@
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding></Button>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="0.0" prefWidth="451.0">
                <children>
-                  <Region prefHeight="74.0" prefWidth="370.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="0.0" prefWidth="315.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

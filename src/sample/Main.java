@@ -25,7 +25,6 @@ public class Main extends Application
         //primaryStage.initStyle(StageStyle.UNDECORATED); //Removes the Window bar completely, will need to implement for MacOS only as it still allows fullscreen whereas Windows doesn't.
         primaryStage.setResizable(false); // Stops the resizing and maximising of the program
         primaryStage.show();
-
     }
 
 }
