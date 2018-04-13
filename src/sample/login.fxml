@@ -59,7 +59,7 @@
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding></Label>
-            <Region prefHeight="21.0" prefWidth="607.0" />
+            <Region prefHeight="21.0" prefWidth="565.0" />
             <Label prefHeight="21.0" prefWidth="361.0" text="This version of Learnix doesn't cover everything, only the basics">
                <padding>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />

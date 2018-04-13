@@ -61,7 +61,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So there are lots of packages, but how do you use the package manager to get them on your computer? &#10;&#10;If you’re used to Windows operating systems you’ll be used to going to the website, downloading the file and running an installer. &#10;&#10;Whilst you can do that, instead you can use a repository. A repository holds lots of packages which you can then download from. &#10;&#10;If you have a smart phone you are probably already used to a repository. The Google Play Store and the Apple Play store are both repositories! " wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So there are lots of packages, but how do you use the package manager to get them onto your computer? &#10;&#10;If you’re used to Windows operating systems, you’ll be used to going to the website, downloading the file and running an installer. &#10;&#10;Whilst you can do that, instead you can use a repository. A repository holds lots of packages which you can then download from. &#10;&#10;If you have a smart phone, you are probably already used to a repository: The Google Play Store and the Apple Play store are both repositories! " wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -94,7 +94,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So when you want to download a package such as Firefox, you can download it directly to your PC from the repository, just like an app from the mobile app store.&#10;&#10;Different operating systems use different package managers and different repositories. Whilst Ubuntu and Fedora are both Linux they both use a different package manager with a different repository. Just like how iOS and Android are both mobile operating systems but use different “App stores”&#10;" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So when you want to download a package, such as Firefox, you can download it directly to your PC from the repository, just like an app from the mobile app store.&#10;&#10;Different operating systems use different package managers and different repositories. Whilst Ubuntu and Fedora are both Linux, they both use a different package manager with a different repository; just like how iOS and Android are both mobile operating systems but use different “App stores”&#10;" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

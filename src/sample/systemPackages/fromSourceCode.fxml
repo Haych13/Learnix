@@ -59,7 +59,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In very rare occasions you will find programs that are only in source code, meaning it’s not yet a program ready to run, you need to compile the code to make it able to execute on your system.&#10;&#10;There is a tool you can install from the repository that makes things easier. " wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In very rare occasions, you will find programs that are only in source code, meaning it’s not yet a program ready to run and you'll need to compile the code to make it able to execute on your system.&#10;&#10;There is a tool you can install from the repository that makes things easier. " wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -90,7 +90,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now, before you do anything, take a look at the README or INSTALL file inside the package. Sometimes there are instructions on how to build it or specific installation requirements.&#10;&#10;" wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now, before you do anything, take a look at the README or INSTALL file inside the package. Sometimes there are instructions on how to build it or for specific installation requirements.&#10;&#10;" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -116,7 +116,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There are a few ways to do this depending on the compile method of the developer. ‘make’ is the most common one so that’s the one going to be covered.&#10;&#10;Inside the files there should be be a configure script, this script checks for dependencies on your system and if you are missing anything, you'll see an error and you'll need to fix those dependencies.&#10;&#10;‘./’ followed by the name of the script is how you run scripts. Often you’ll find them with ‘.sh’ on the end." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There are a few ways to do this depending on the compile method of the developer. ‘make’ is the most common one so that’s the one going to be covered.&#10;&#10;Inside the files there should be be a configure script, this script checks for dependencies on your system and if you are missing anything, you'll see an error and you'll need to fix those dependencies.&#10;&#10;‘./’ followed by the name of the script is how you run scripts: Often you’ll find them with ‘.sh’ on the end." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

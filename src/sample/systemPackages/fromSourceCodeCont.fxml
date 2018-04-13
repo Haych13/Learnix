@@ -65,7 +65,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inside of the package there should be a file called Makefile that contains rules to building the software. When you run the make command, it looks at this file to build the software.To then install the package, run this next command. It will copy the correct files to the correct locations on your system." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inside of the package, there should be a file called 'Makefile' that contains rules to building the software. When you run the make command, it looks at this file to build the software. To then install the package, run this next command and it will copy the correct files to the correct locations on your system." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -81,7 +81,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to uninstall the package it’s pretty much the same but use ‘uninstall’." wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to uninstall the package, it’s pretty much the same but use ‘uninstall’." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -115,7 +115,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Although, be careful about using make install. Because it installs lots of stuff in the background if you try to uninstall a package it might not get everything because it might miss some of the stuff it installed in the background. Instead you can use ‘checkinstall’, this command will make your own .deb file so you can install and uninstall it that way.&#10;&#10;" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Although, be careful about using 'make install' as this installs lots of stuff in the background. If you try to uninstall a package, it might not get everything because it may miss some of the stuff installed in the background. Instead, you can use ‘checkinstall’ as this command will make your own .deb file allowing you to install and uninstall it that way.&#10;&#10;" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

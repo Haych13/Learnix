@@ -61,7 +61,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sometimes you’ll see a .tar.gz file. Why are both used? Well tar adds files together but it doesn’t compress them, you already know gzip does but can only use one file. So if you use tar to create a single file you can then use gzip to compress them.&#10;&#10;So, how do I compress a .tar.gz? You work from the outside in. First use gzip to decompress, then unpack the archive with tar. Alternatively you can add the ‘-z’ flag to tar, this tells tar to remove the compression with gzip." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sometimes you’ll see a .tar.gz file. Why are both used? Well, tar adds files together but it doesn’t compress them, you already know gzip does but can only use one file. So if you use tar to create a single file, you can then use gzip to compress them.&#10;&#10;So, how do I compress a .tar.gz? You work from the outside in. First use gzip to decompress, then unpack the archive with tar. Alternatively, you can add the ‘-z’ flag to tar, this tells tar to remove the compression with gzip." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -94,7 +94,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets create a compressed tar file using the '-z' flag" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets create a compressed tar file using the '-z' flag:" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -110,7 +110,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To uncompress and extract the files from a .tar.gz" wrappingWidth="470.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To uncompress and extract the files from a .tar.gz:" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>

@@ -59,7 +59,7 @@
    <left>
       <VBox prefHeight="570.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The command line, also known as: Terminal, or CLI, is the most useful tool on the entire Operating System.&#10;&#10;For this tutorial you'll be learning about the shell program Bash (Bourne Again Shell), almost all GNU/Linux distributions will use Bash, and even MacOS. &#10;&#10;So let's start. If you have a Terminal to hand feel free to practice anything learnt here on there, practice makes perfect." wrappingWidth="423.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The command line, also known as the Terminal, is the most useful tool on the entire Operating System.&#10;&#10;For this tutorial, you'll be learning about the shell program Bash (Bourne Again Shell), almost all GNU/Linux distributions will use Bash, and even MacOS. &#10;&#10;So let's start. If you have a Terminal to hand, feel free to practise anything on there as practise makes perfect." wrappingWidth="423.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -74,7 +74,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you open the Terminal, the above text is similar to what you'll see on your own. It's your account's Username and then the System's name on the OS. &#10;&#10;Here is an example, &quot;harry&quot; is the username, and &quot;HAWK&quot; is the name of the PC" wrappingWidth="415.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you open the Terminal, the above text is similar to what you'll see on your own: It's your account's Username and then the System's name on the OS. &#10;&#10;Here is an example, &quot;harry&quot; is the username, and &quot;HAWK&quot; is the name of the PC" wrappingWidth="415.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -116,7 +116,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out text in the console, not incredibly useful on its own like this but it can be useful when writing scripts.&#10;&#10;Using the example to the left for reference, what will appear if you type this?" wrappingWidth="459.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out text in the console. While not incredibly useful on its own like this, it can be useful when writing scripts.&#10;&#10;Using the example to the left for reference, what will appear if you type this?" wrappingWidth="459.0">
                <font>
                   <Font size="15.0" />
                </font>

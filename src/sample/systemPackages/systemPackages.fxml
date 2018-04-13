@@ -61,7 +61,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="On your computer you will most likelly have lots of software installed, your favourite internet browsers, document suites, music and video players; they are all packages.&#10;&#10;On Linux you can install software (Packages) easily with something called a package manager. Unfortunately not everything can be installed with a package manager, but a lot of what you want will be.&#10;&#10;The most common package managers are Debian (.deb) and Red Hat (.rpm).&#10;&#10;If you run Debian, Ubuntu, Linux Mint, etc, you will use the Debian Package Manager, if you use Red Hat Enterprise Linux, Fedora, CentOS, etc, you'll have the Red Hat Package Manager." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="On your computer, you will most likelly have lots of software installed, such as your favourite internet browsers, document suites, music and video players; they are all packages.&#10;&#10;On Linux you can install software (Packages) easily with something called a package manager. Unfortunately not everything can be installed with a package manager, but a lot of what you want will be.&#10;&#10;The most common package managers are Debian (.deb) and Red Hat (.rpm).&#10;&#10;If you run Debian, Ubuntu, Linux Mint, etc, you will use the Debian Package Manager. If you use Red Hat Enterprise Linux, Fedora, CentOS, etc, you'll have the Red Hat Package Manager." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -115,7 +115,7 @@
                   <Insets bottom="30.0" left="130.0" right="30.0" />
                </VBox.margin>
             </ImageView>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So what are packages? &#10;&#10;To make software they are lots of files that are compiled into one. Like an Ikea product, lots of parts are all sent in a package that when used together make something useful.&#10;&#10;Examples you may know: Google Chrome, Firefox, Photoshop, Adobe Reader, and many more.&#10;&#10;When the developers finish making or updating the software they can send their package to package maintainers, package maintainers handle getting software in the hands of the users. These package maintainers review, manage and distribute this software in the form of packages." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So what are packages? &#10;&#10;To make software, there are lots of files that are compiled into one, like an Ikea product: Lots of parts are all sent in a package that, when used together, make something useful.&#10;&#10;Examples you may know: Google Chrome, Firefox, Photoshop, Adobe Reader, and many more.&#10;&#10;When the developers finish making or updating the software, they can send their package to package maintainers. Package maintainers handle getting software in the hands of the users, of whom review, manage and distribute this software in the form of packages." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

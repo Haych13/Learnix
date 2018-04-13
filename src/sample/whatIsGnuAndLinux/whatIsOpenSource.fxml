@@ -33,7 +33,7 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="What is Open Source" textFill="WHITE">
+            <Label text="What is Open Source?" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -64,7 +64,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="What is open source?&#10;&#10;Open Source Software, sometimes called Free Open Source Software (FOSS) is software that anyone is allowed to view the source code, modify the source code, and redistrobute it to other users. Ubuntu is an open source operating system make up with GNU and Linux. You are welcome to give it away to friends, you can modify then give it away if you like. The 'Free' in FOSS stands for Freedom, not price.&#10; &#10;Source code is the code that makes up software, many users believe it is important because being able to see and access the code means you know exactly what it is doing and they aren't snooping in listening to what you type and look at on your computer.&#10;&#10;" wrappingWidth="424.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Open Source Software, sometimes called Free Open Source Software (FOSS), is software that anyone is allowed to view the source code, modify the source code, and redistrobute it to other users. Ubuntu is an open source operating system made from GNU and Linux. You are welcome to give it away to friends, you can modify then give it away if you like. The 'Free' in FOSS stands for Freedom, not price.&#10; &#10;Source code is the code that makes up software, many users believe it is important because being able to see and access the code means that you know exactly what it is doing and that noone is accessing information on your computer without your knowledge. Such as, developers writing in code to track what websites you visit." wrappingWidth="424.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -84,7 +84,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Closed source is the opposite, you have no right to access the source code, you cannot modify source code, you cannot redistrobute the source code. Windows is comprised of closed source software.&#10;&#10;You can find more information on the Open Source Initiative website by clicking the button below." wrappingWidth="424.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Closed source is the opposite, you have no right to access the source code, you cannot modify source code, you cannot redistrobute the source code. For example, Microsoft Windows is comprised of closed source software.&#10;&#10;You can find more information on the Open Source Initiative website by clicking the button below." wrappingWidth="424.0">
                <font>
                   <Font size="15.0" />
                </font>

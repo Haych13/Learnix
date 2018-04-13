@@ -59,7 +59,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So you just learnt the easiest way to install software over the terminal. But not everything is in your repository so you have to download it and install it yourself, you won’t often see this if you stick to the package repositories. &#10;&#10;If you’ve used Windows you’ll most likely have come across .exe, and if you’re used to MacOS then .dmg. &#10;&#10;.deb and .rpm is essentially the same thing, but you can still install them via the terminal. &#10;&#10;Just like with apt and yum each one is exclusive to it’s distribution. .deb is from Debian, and .rpm from Red Hat.&#10;&#10;There is a major problem with installing software this way, they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies, and so on. &#10;&#10;This was one of the reasons that brought forward the package management systems such as apt &amp; yum.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So you just learnt the easiest way to install software over the terminal, but not everything is in your repository so you have to download it and install it yourself; you won’t often see this if you stick to the package repositories. &#10;&#10;If you’ve used Windows, you’ll most likely have come across .exe, and if you’re used to MacOS, then .dmg. &#10;&#10;.deb and .rpm is essentially the same thing, but you can still install them via the terminal. &#10;&#10;Just like with apt and yum, each one is exclusive to its distribution. .deb is from Debian, and .rpm from Red Hat.&#10;&#10;There is a major problem with installing software this way as they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies, and so on. &#10;&#10;This was one of the reasons that brought forward the package management systems, such as apt &amp; yum.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -84,7 +84,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, to install a package you use these commands, remember, dpkg for Debian, rpm for Red Hat!" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, to install a package you use these commands, remember, dpkg for Debian, and rpm for Red Hat!" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -100,7 +100,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To then remove a package you use these commands" wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To then remove a package, you use these commands" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

@@ -59,9 +59,9 @@
       </HBox>
    </bottom>
    <right>
-      <VBox prefHeight="573.0" prefWidth="403.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="573.0" prefWidth="497.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you've never used a Terminal before you're probably wondering how to get to it. Many 'flavours' allow you to open the Terminal with a command such as CTRL+ALT+T. &#10;&#10;You can always search your list of Applications for one called &quot;Terminal&quot; and open it from there." wrappingWidth="448.220703125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you've never used a Terminal before, you're probably wondering how to get to it. Many distributions allow you to open the Terminal with a command, such as CTRL+ALT+T. &#10;&#10;You can always search your list of Applications for one called &quot;Terminal&quot; and open it from there." wrappingWidth="448.220703125">
                <font>
                   <Font size="15.0" />
                </font>
@@ -74,7 +74,7 @@
                   <Image url="@../Assets/openTerminal.jpg" />
                </image>
                <VBox.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="20.0" left="5.0" right="20.0" top="20.0" />
                </VBox.margin>
             </ImageView>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alternative names for the Terminal: &#10;- Console&#10;- Shell&#10;- Command Line&#10;- Command Line Interface (CLI)">
@@ -88,7 +88,7 @@
             <Region prefHeight="10.0" prefWidth="484.0" />
             <HBox prefHeight="4.0" prefWidth="484.0">
                <children>
-                  <Region prefHeight="0.0" prefWidth="348.0" />
+                  <Region prefHeight="37.0" prefWidth="361.0" />
                   <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
@@ -110,10 +110,10 @@
                   <Image url="@../Assets/Terminal-linux-ubuntu.png" />
                </image>
                <VBox.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </ImageView>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="What is a Terminal? A terminal is an interface where you can type and execute text based commands. &#10;&#10;Why should I use it? It can be much quicker to do something with a text command than it can do by using a graphical interface and your mouse.&#10;&#10;Example: Instead of having to open up your files, navigate where you want, right click and press &quot;New folder&quot;, you can do all of that in one command." wrappingWidth="492.58203125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="What is a Terminal? A terminal is an interface where you can type and execute text-based commands. &#10;&#10;Why should I use it? It can be much quicker to do something with a text command than it can be done by using a graphical interface and your mouse.&#10;&#10;Example: Instead of having to open up your files, navigate where you want, right click and press &quot;New folder&quot;, you can do all of that in one command." wrappingWidth="492.58203125">
                <font>
                   <Font size="15.0" />
                </font>

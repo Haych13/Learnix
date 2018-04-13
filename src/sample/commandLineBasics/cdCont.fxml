@@ -51,7 +51,7 @@
    <left>
       <VBox prefHeight="618.0" prefWidth="525.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, you know how to change directory, but where do you start when you first open the Terminal? &#10;&#10;Root?&#10;&#10;Nope, it's actually your home directory. &#10;&#10;If you run the command 'cd' on its own you'll come back to your home directory too." wrappingWidth="486.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, you know how to change directory, but where do you start when you first open the Terminal? &#10;&#10;Root?&#10;&#10;Nope, it's actually your home directory. &#10;&#10;If you run the command 'cd' on its own, you'll come back to your home directory too." wrappingWidth="486.0">
                <font>
                   <Font size="15.0" />
                </font>

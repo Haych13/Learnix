@@ -56,7 +56,7 @@
    <left>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There have been a lot of commands so far. Even more to learn yet too&#10;&#10;If ever you're confused or doubtful about what a command does you can use the whatis command. For example, you want a description about the touch command you would type in" wrappingWidth="424.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There have been a lot of commands so far, with even more yet to learn.&#10;&#10;If you're ever confused or doubtful about what a command does, you can use the whatis command. For example, if you wanted a description about the touch command, you would type in" wrappingWidth="424.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -71,7 +71,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It gives you a short description about the command. It is taken from the man page.&#10;&#10;It is a way of remembering about the command without the huge wall of text to read through" wrappingWidth="424.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It gives you a short description about the command, it is taken from the man page.&#10;&#10;It is a way of remembering about the command without the huge wall of text to read through." wrappingWidth="424.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -88,7 +88,7 @@
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Some commands can get really repetitive, especially when they're really long or contain lots of flags&#10;&#10;Luckily you can create an alias, once you create an alias for a command, when you run the alias it will run the full command for you saving you precious seconds in your day&#10;" wrappingWidth="441.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Some commands can get really repetitive, especially when they're really long or contain lots of flags&#10;&#10;Luckily, you can create an alias. Once you create an alias for a command, the alias will run the full command for you, saving you precious seconds in your day&#10;" wrappingWidth="441.0">
                <font>
                   <Font size="15.0" />
                </font>

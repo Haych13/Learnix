@@ -60,7 +60,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Whilst you can modify the permissions for files, you can also change who owns the file too.&#10;&#10;To change who owns the file you use the chown command, CHange OWNer. &#10;&#10;To own the file yourself you would do:" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Whilst you can modify the permissions for files, you can also change who owns the file too.&#10;&#10;To change who owns the file, you use the chown command, CHange OWNer. &#10;&#10;To own the file yourself, you would do:" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -75,7 +75,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the ownership into another user you just add in their username before the filename." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the ownership into another user, you just add in their username before the filename:" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -91,7 +91,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the group you use chgrp, CHange GRouP." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the group, you use chgrp, CHange GRouP:" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>

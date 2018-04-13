@@ -67,7 +67,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="As briefly mentioned in the last page, /etc/shadow is for storing user authentication, such as passwords.&#10;&#10;It required a superuser to read the permissions. (Remember sudo!)&#10;&#10;All passwords are in an encrypted format, they aren't stored in plain text so they're nice and secure.&#10;&#10;Much like the /etc/passwd file each line is for a user and there are fields separated by colons (:)." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="As briefly mentioned in the last page, /etc/shadow is for storing user authentication, such as passwords.&#10;&#10;It required a superuser to read the permissions: Remember sudo!&#10;&#10;All passwords are in an encrypted format, they aren't stored in plain text so they're nice and secure.&#10;&#10;Much like the /etc/passwd file, each line is for a user and there are fields separated by colons (:)." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -82,7 +82,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </ImageView>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are 6 sections to this file. Same with /etc/passwd, don't worry if you can't memorise it. You now know what to look for if ever you are accessing the files." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are 6 sections to this file, same with /etc/passwd. Don't worry if you can't memorise it, you now know what to look for if you are ever accessing the files." wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -114,7 +114,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Username&#10;&#10;2: Password, this is the user's encrypted password, the password should be 8-32 characters long, preferably including special characters, numbers, upper and lower case. The stronger the better.&#10;&#10;3: Last password change (lastchanged), it counts how many days since 1st January 1970 when the password was last changed, if there is a 0 that means the user should change their password the next time they login&#10;&#10;4: Minimum, Days that a user will have to wait before being able to change their password again&#10;&#10;5: Maximum, Maximum number of days before a user has to change their password&#10;&#10;6: Warn, the number of days before the password is to expire&#10;&#10;7: Password inactivity period, the number of days after a password has expired to allow login with their password&#10;&#10;8: Account expiration date, the date that user will not be able to login" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Username&#10;&#10;2: Password, this is the user's encrypted password. The password should be 8-32 characters long, preferably including special characters, numbers, upper and lower case: The stronger the better.&#10;&#10;3: Last password change (lastchanged), counts how many days between 1st January 1970 and the date from when the password was last changed: If there is a 0, that means the user should change their password the next time they login&#10;&#10;4: Minimum displays the days that a user will have to wait before being able to change their password again&#10;&#10;5: Maximum, displays the maximum number of days before a user has to change their password&#10;&#10;6: Warn, the number of days before the password is due to expire&#10;&#10;7: Password inactivity period shows the number of days after a password has expired to allow login with their password&#10;&#10;8: Account expiration date, the date that user will no longer be able to login" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

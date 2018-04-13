@@ -58,7 +58,7 @@
    <left>
       <VBox prefHeight="618.0" prefWidth="432.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You have finished this section, that's the basics covered!&#10;&#10;Since the basics are covered you probably want to know how to exit from the shell so you can go make a cup of tea or coffee. For that you use the exit command&#10;&#10;" wrappingWidth="404.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You have finished this section, that's the basics covered!&#10;&#10;Since the basics are covered, you probably want to know how to exit from the shell so you can go make a cup of tea or coffee. To exit the terminal, you use the exit command&#10;&#10;" wrappingWidth="404.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>

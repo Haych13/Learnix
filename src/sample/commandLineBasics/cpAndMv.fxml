@@ -65,7 +65,7 @@
    <left>
       <VBox pickOnBounds="false" prefHeight="570.0" prefWidth="496.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are already adept with using a computer you should already know the basics of how to copy and paste or move files around. The Terminal gives us an easy way to do it, and even quicker if you want to copy or move multiple files.&#10;&#10;To copy a file you use the command &quot;cp&quot;, meaning CoPy, you then type in the name of the file then the destination.&#10;&#10;Here's an example:" wrappingWidth="439.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are already adept with using a computer, you should already know the basics of how to copy and paste or move files around. The Terminal gives us an easy way to do it, and even quicker if you want to copy or move multiple files.&#10;&#10;To copy a file, you use the command &quot;cp&quot;, meaning CoPy, you then type in the name of the file then the destination.&#10;&#10;Here's an example:" wrappingWidth="439.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>

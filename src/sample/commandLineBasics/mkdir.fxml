@@ -74,7 +74,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As long as a Directory with the same name doesn't already exist it will make it. You can even make multiple Directories at the same time. " wrappingWidth="440.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As long as a directory with the same name doesn't already exist, it will make it. You can even make multiple directories at the same time. " wrappingWidth="440.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -114,7 +114,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can even create Subdirectories (A Directory within a Directory) at the same time.&#10;&#10;Adding -p, the &quot;Parent flag&quot; means you can do this. So if you wanted to make a folder for your holiday snaps, then a different folder for each year, you can make the folder for Holiday, and the year 2018 in one command!" wrappingWidth="482.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can even create subdirectories (A directory within a directory) at the same time.&#10;&#10;Adding -p, the &quot;Parent flag&quot;, means you can do this. So if you wanted to make a folder for your holiday snaps, then a different folder for each year, you can make the folder for Holiday, and the year 2018 in one command!" wrappingWidth="482.0">
                <font>
                   <Font size="15.0" />
                </font>

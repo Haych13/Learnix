@@ -60,7 +60,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In most operating systems there are ways to manage users, accounts, and passwords. Here are the tools used to add users, remove users, and change passwords!&#10;&#10;So to add a user you are going to want to use the 'adduser' command followed by the username you want to be created. There is also the 'useradd' command but it isn't as friendly." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In most operating systems there are ways to manage users, accounts, and passwords. Here are the tools used to add users, remove users, and change passwords!&#10;&#10;So to add a user, you are going to want to use the 'adduser' command followed by the username you want to be created. There is also the 'useradd' command but it isn't as friendly." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -75,7 +75,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You'll then be given options if you want to add names, phone number, etc. You don't have to add them, but you can if you wish&#10;&#10;To delete a user it's same but you write 'deluser' instead of 'adduser'." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You'll then be given options if you want to add names, phone number, etc. You don't have to add them, but you can if you wish&#10;&#10;To delete a user, it's the same but you write 'deluser' instead of 'adduser'." wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -133,7 +133,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to change another user's password type in the same command but their username after. This will then allow you to change that user's password." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to change another user's password, type in the same command but their username after. This will then allow you to change that user's password." wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>

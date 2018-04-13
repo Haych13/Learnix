@@ -59,7 +59,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Many files online that you come across are often archived (compressed), you may know .zip or .rar files. If you don’t, an archive is an archive of files, inside of an archive you will find many files. An archive is an easy way of sending multiple files in one easy download. They can also compress file sizes, making them smaller to download than the full file sizes on their own.&#10;&#10;On GNU/Linux you can use gzip to compress files. Instead of .zip they use .gz.&#10;&#10;To compress a file down run gzip and the name of the file you want to compress&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Many files online that you come across are often archived (compressed), you may know .zip or .rar files. If you don’t, an archive is an collection of files. Inside of an archive, you will find many files. An archive is an easy way of sending multiple files in one easy download. They can also compress file sizes, making them smaller to download than the full file sizes on their own.&#10;&#10;On GNU/Linux you can use gzip to compress files: Instead of .zip, they use .gz.&#10;&#10;To compress a file down, run gzip and the name of the file you want to compress&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -74,7 +74,7 @@
                   <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To decompress the file you use gunzip (g un-zip) and the name of the file. " wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To decompress the file, you use gunzip (g un-zip) and the name of the file. " wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -132,7 +132,7 @@
                   <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The flags used:&#10;&#10;c – Create, this is because you want to create a new archive&#10;v -  Vervose, this tell the program to be verbose and let us see what it's doing&#10;f -  Filename, this means you can create a filename for your .tar file.&#10;&#10;To extract the contents of a tar file, use:" wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The flags used:&#10;&#10;c – Create, this is because you want to create a new archive&#10;v -  Verbose, this tells the program to be verbose and let us see what it's doing&#10;f -  Filename, this means you can create a filename for your .tar file.&#10;&#10;To extract the contents of a tar file, use:" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

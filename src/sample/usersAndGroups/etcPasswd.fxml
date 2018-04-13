@@ -79,7 +79,7 @@
                   <Image url="@../Assets/passwdFile.jpg" />
                </image>
                <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                  <Insets bottom="30.0" left="5.0" right="30.0" top="30.0" />
                </VBox.margin>
             </ImageView>
             <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/etc/passwd contains one entry per line for each user. Each field is separated from a colon (:), there are 7 fields.&#10;&#10;Don't worry if you can't memorise it, at least you briefly know what it is and what to look for if ever you need to.&#10;" wrappingWidth="470.0">
@@ -117,7 +117,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Username, pretty simple, must be between 1-32 characters&#10;&#10;2: Password, the &quot;x&quot; means the password is encrypted and stored in the /etc/shadow file (Confusing right, at first thought you'd think it should be in /etc/passwd)&#10;&#10;3: User ID (UID), Each user gets a UID. 0 is for root, 1-99 are reserved for predefined accounts, UIDs 100-999 are reserved by the system, for administrative and system accounts/groups&#10;&#10;4: Group ID (GID), The primary group ID (Which is stored in /etc/group)&#10;&#10;5: User ID Info, the comments field. It allows you to add extra information about the user, such as name, phone number, etc. You'll have seen this if you have ever tried to create a user with 'adduser'&#10;&#10;6: Home Directory, this will show the absolute path to the user's home directory, if the user doesn't have a home directory then it will show '/'&#10;&#10;7: Shell, The absolute path of the shell. Typically the shell is bash, located at /bin/bash." wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Username, pretty simple, must be between 1-32 characters&#10;&#10;2: Password, the &quot;x&quot; means the password is encrypted and stored in the /etc/shadow file. (Confusing right? At first thought you'd think it should be in /etc/passwd)&#10;&#10;3: User ID (UID), Each user gets a UID. 0 is for root, 1-99 are reserved for predefined accounts, UIDs 100-999 are reserved by the system, for administrative and system accounts/groups&#10;&#10;4: Group ID (GID), The primary group ID (Which is stored in /etc/group)&#10;&#10;5: User ID Info, the comments field. It allows you to add extra information about the user, such as name, phone number, etc. You'll have seen this if you have ever tried to create a user with 'adduser'&#10;&#10;6: Home Directory, this will show the absolute path to the user's home directory, if the user doesn't have a home directory then it will show '/'&#10;&#10;7: Shell, The absolute path of the shell. Typically the shell is bash, located at /bin/bash." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

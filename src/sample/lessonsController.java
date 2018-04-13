@@ -23,13 +23,13 @@ public class lessonsController
     }
 
     public Button practiceTestBtn;
-    public void practiceTestBtnClick() throws IOException
+    public void practiceTestBtnClick()
     {
         System.out.println("You have clicked practiceTestBtn");
         {
             System.out.println("You have clicked HelpBtn");
             try {
-                Desktop.getDesktop().browse(new URL("https://goo.gl/forms/DsNFP94CscyyOSs63").toURI());
+                Desktop.getDesktop().browse(new URL("https://docs.google.com/forms/d/e/1FAIpQLScasXpfTuOG0zQsp2okh3zu4NEL-yr4tUwGK0bxXnQRm5pkyw/viewform?usp=sf_link").toURI());
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (URISyntaxException e) {
@@ -115,7 +115,7 @@ public class lessonsController
     } //This closes the application
 
     public Button onlineCLIBtn;
-    public void onlineCLIBtnClick() throws IOException
+    public void onlineCLIBtnClick()
     {
         System.out.println("You have clicked practiceTestBtn");
         {

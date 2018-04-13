@@ -58,7 +58,7 @@
    <left>
       <VBox prefHeight="582.0" prefWidth="466.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Some commands can get really repetitive, especially when they're really long or contain lots of flags&#10;&#10;Luckily you can create an alias, once you create an alias for a command, when you run the alias it will run the full command for you saving you precious seconds in your day&#10;" wrappingWidth="441.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Some commands can get really repetitive, especially when they're really long or contain lots of flags&#10;&#10;Luckily, you can create an alias. Once you create an alias for a command, the alias will run the full command for you, saving you precious seconds in your day&#10;" wrappingWidth="441.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>

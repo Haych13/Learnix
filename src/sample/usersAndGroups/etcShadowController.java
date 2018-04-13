@@ -36,7 +36,7 @@ public class etcShadowController
     {
         System.out.println("You are now in root.fxml");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/etcGroup.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/etcGroups.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

@@ -14,7 +14,8 @@ import java.net.URL;
 public class etcPasswdController
 {
     public Button backBtn;
-    public void backBtnClick() throws IOException {
+    public void backBtnClick() throws IOException
+    {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
         Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));

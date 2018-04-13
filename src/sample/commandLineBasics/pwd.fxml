@@ -57,7 +57,7 @@
    <left>
       <VBox prefHeight="574.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In GNU/Linux, everything is a file and all the files are organised in a hierarchical directory tree. It might like confusing at first, but you'll soon get the hang of it.&#10;&#10;Locations of files are often called paths. To give an exaple of a path, lets say you just downloaded a file called &quot;file.pdf&quot;, and your username on the computer is Learnix, so the path would look like this:" wrappingWidth="424.37109375">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In GNU/Linux, everything is a file and all the files are organised in a hierarchical directory tree. It might like confusing at first, but you'll soon get the hang of it.&#10;&#10;Locations of files are often called paths. To give an example of a path, lets say you just downloaded a file called &quot;file.pdf&quot;, and your username on the computer is Learnix, the path would look like this:" wrappingWidth="424.37109375">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -75,7 +75,7 @@
                </VBox.margin>
             </Text>
             <Region prefHeight="16.0" prefWidth="329.0" />
-            <Text fill="WHITE" layoutX="20.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ever you have navigated around the filesystem and you have forgotten where you are you can use the 'pwd' command, this means Print Working Directory, upon typing pwd the path to where you are will be printed underneath.&#10;&#10;Another example would be your current Working Directory. Lets say you only just opened the Terminal, you haven't used cd to move yet. Your current Working Directory will be: " wrappingWidth="429.37109375">
+            <Text fill="WHITE" layoutX="20.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If ever you have navigated around the filesystem and you have forgotten where you are, you can use the 'pwd' command, this means Print Working Directory. Upon typing pwd, the path to where you are will be printed underneath.&#10;&#10;Another example would be your current Working Directory. Let's say you only just opened the Terminal, you haven't used cd to move yet, your current Working Directory would be: " wrappingWidth="429.37109375">
                <font>
                   <Font size="15.0" />
                </font>

@@ -61,7 +61,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The two most popular package management systems are Apt and Yum. As mentioned previously, Apt is part of the Debian line of operating systems, such as Debian, Ubuntu, Linux Mint, and more. &#10;&#10;Yum is part of Red Hat, such as Red Hat Enterprise Linux, Fedora, CentOS, and more.&#10;&#10;To install a package it’s pretty much the same on both apt and yum." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The two most popular package management systems are Apt and Yum. As mentioned previously, Apt is part of the Debian line of operating systems, such as Debian, Ubuntu, Linux Mint, and more. &#10;&#10;Yum is part of Red Hat, such as Red Hat Enterprise Linux, Fedora, CentOS, and more.&#10;&#10;To install a package, it’s pretty much the same on both apt and yum." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -76,7 +76,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On older systems they only used apt-get, but apt is a newer streamlined version, for day to day use you wouldn’t notice much of a difference except apt (not apt-get) has a nice percentage gauge at the bottom of the terminal telling you how close it is to completion. On some recent versions of Fedora ‘yum’ has been replaced with ‘dnf’, it works the same and has the same interface, just replace ‘yum’ with ‘dnf’&#10;&#10;I can install software but I no longer want it, how do I remove it? " wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On older systems, they only used apt-get, but apt is a newer streamlined version. For day to day use, you wouldn’t notice much of a difference except apt (not apt-get) has a nice percentage gauge at the bottom of the terminal telling you how close it is to completion. On some recent versions of Fedora, ‘yum’ has been replaced with ‘dnf’; it works the same and has the same interface, just replace ‘yum’ with ‘dnf’&#10;&#10;I can install software but I no longer want it, how do I remove it? " wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -126,7 +126,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command updates your package repositories, this basically lets your system know what needs to update, what doesn’t need to update, and what software is no longer needed. With Yum it will then ask if you want to apply any updates it finds, with apt you have to use one extra step." wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command updates your package repositories. This basically lets your system know what needs to be updated, what doesn’t need to updated, and what software is no longer needed. With Yum, it will then ask if you want to apply any updates it finds: With apt, you have to use one extra step." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
