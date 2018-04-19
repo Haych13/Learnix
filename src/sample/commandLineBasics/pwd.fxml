@@ -57,7 +57,7 @@
    <left>
       <VBox prefHeight="574.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In GNU/Linux, everything is a file and all the files are organised in a hierarchical directory tree. It might like confusing at first, but you'll soon get the hang of it.&#10;&#10;Locations of files are often called paths. To give an example of a path, lets say you just downloaded a file called &quot;file.pdf&quot;, and your username on the computer is Learnix, the path would look like this:" wrappingWidth="424.37109375">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In GNU/Linux, everything is a file and all the files are organised in a hierarchical directory tree. It might look confusing at first, but you'll soon get the hang of it.&#10;&#10;Locations of files are often called paths. To give an example of a path, lets say you just downloaded a file called &quot;file.pdf&quot;, and your username on the computer is Learnix, the path would look like this:" wrappingWidth="424.37109375">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -126,7 +126,7 @@
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin></Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Type the command used to find your Working Directory:">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Type the command name used to find your Working Directory:">
                <font>
                   <Font size="16.0" />
                </font>
@@ -153,7 +153,7 @@
             </Button>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="tryAgainLbl" prefHeight="50.0" prefWidth="158.0" text="Try again" textFill="WHITE">
+                  <Label fx:id="tryAgainLbl" prefHeight="85.0" prefWidth="142.0" text="Try again" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>

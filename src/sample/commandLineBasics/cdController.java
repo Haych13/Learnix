@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
+
 public class cdController
 {
     public Button backBtn;
@@ -31,7 +32,7 @@ public class cdController
     }
 
     public MenuItem HelpBtn;
-    public void HelpBtnClick()
+    public void HelpBtnClick() throws IOException
     {
         System.out.println("You have clicked HelpBtn");
         try {
@@ -44,7 +45,7 @@ public class cdController
     } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;
-    public void CloseBtnClick()
+    public void CloseBtnClick() throws IOException
     {
         System.out.println("You have clicked CloseBtn");
         System.exit(0);

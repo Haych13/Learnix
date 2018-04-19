@@ -26,7 +26,7 @@ public class fromSourceCodeContController
     public void nextBtnClick() throws IOException
     {
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/fromSourceCodeCont.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

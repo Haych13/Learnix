@@ -22,11 +22,21 @@ public class fromSourceCodeController
         primaryStage.getScene().setRoot(newRoot);
     }
 
+    public Button cdBackBtn;
+    public void cdBackBtnClick() throws IOException
+    {
+        System.out.println("You are back to the lessons screen");
+        Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/compressedFilesCont.fxml"));
+        primaryStage.getScene().setRoot(newRoot);
+    }
+
+
     public Button nextBtn;
     public void nextBtnClick() throws IOException
     {
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/fromSourceCodeCont.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 

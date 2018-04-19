@@ -41,7 +41,7 @@ public class modifyingPermissionsController
             e.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }
+        }//https://goo.gl/forms/DsNFP94CscyyOSs63
     } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;

@@ -133,7 +133,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to change another user's password, type in the same command but their username after. This will then allow you to change that user's password." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to change another user's password, type in the same command but their username after. This will then allow you to change that user's password. Remember to change &quot;&lt;username&gt;&quot; (including &lt;&gt;) with the name of the username chosen" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -149,7 +149,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Question time: What is the command to change the a user's password?" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Question time: What is the command someone would to change their password? Only the command name." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

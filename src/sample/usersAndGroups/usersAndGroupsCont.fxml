@@ -135,7 +135,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command will then add the user to the sudoers file. This is a file that contains all of the accounts which can access sudo. &#10;&#10;To remove the account from sudo it's the same command but with del instead of add" wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This command will then add the user to the sudoers file. This is a file that contains all of the accounts which can access sudo. &#10;&#10;To remove the account from sudo it's the same command but with del instead of add. Remember to replace &quot;&lt;username&gt;&quot; with the username you are using. Don't put &quot;&lt;&gt;&quot; in the final command, that's just to show you what to change." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

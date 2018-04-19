@@ -31,6 +31,7 @@ public class permissionsController
         primaryStage.getScene().setRoot(newRoot);
     }
 
+
     public MenuItem HelpBtn;
     public void HelpBtnClick()
     {
@@ -41,7 +42,7 @@ public class permissionsController
             e.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }
+        }//https://goo.gl/forms/DsNFP94CscyyOSs63
     } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;
@@ -50,5 +51,4 @@ public class permissionsController
         System.out.println("You have clicked CloseBtn");
         System.exit(0);
     } //This closes the application
-
 }
