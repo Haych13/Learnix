@@ -67,19 +67,27 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This one might get a little confusing, especially with the next page being about /etc/shadow.&#10;&#10;You'd think being called &quot;passwd&quot; it might contain something to do with passwords, right?... Wrong. &#10;&#10;Passwd stores general user information, such as usernames, the user ID, group ID, the location of user's home directories, and the login shell. " wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This one might get a little confusing, especially with the next page being about /etc/shadow.&#10;&#10;You'd think being called &quot;passwd&quot; it might contain something to do with passwords, right?... Wrong. &#10;&#10;Passwd stores general user information, such as usernames, the user ID, group ID, the location of user's home directories, and the login shell. &#10;&#10;Remember, you can read the contents of /etc/with the cat command and unless you're root you'll need sudo!" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo cat /etc/shadow" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="2.0" />
+               </VBox.margin>
+            </Text>
             <ImageView fitHeight="158.0" fitWidth="457.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/passwdFile.jpg" />
                </image>
                <VBox.margin>
-                  <Insets bottom="30.0" left="5.0" right="30.0" top="30.0" />
+                  <Insets bottom="30.0" left="5.0" right="30.0" top="10.0" />
                </VBox.margin>
             </ImageView>
             <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/etc/passwd contains one entry per line for each user. Each field is separated from a colon (:), there are 7 fields.&#10;&#10;Don't worry if you can't memorise it, at least you briefly know what it is and what to look for if ever you need to.&#10;" wrappingWidth="470.0">

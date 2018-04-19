@@ -62,7 +62,7 @@
    <right>
       <VBox prefHeight="573.0" prefWidth="497.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Using what you learnt from the previous pages, how would you access and read the contents of /etc/group?" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Using what you learnt from the previous pages, how would you read the contents of /etc/group?" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>

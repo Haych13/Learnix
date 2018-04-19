@@ -67,7 +67,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="As briefly mentioned in the last page, /etc/shadow is for storing user authentication, such as passwords.&#10;&#10;It required a superuser to read the permissions: Remember sudo!&#10;&#10;All passwords are in an encrypted format, they aren't stored in plain text so they're nice and secure.&#10;&#10;Much like the /etc/passwd file, each line is for a user and there are fields separated by colons (:)." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="As briefly mentioned in the last page, /etc/shadow is for storing user authentication, such as passwords.&#10;&#10;It required a superuser to read the permissions: Remember sudo and cat!&#10;&#10;All passwords are in an encrypted format, they aren't stored in plain text so they're nice and secure.&#10;&#10;Much like the /etc/passwd file, each line is for a user and there are fields separated by colons (:)." wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
