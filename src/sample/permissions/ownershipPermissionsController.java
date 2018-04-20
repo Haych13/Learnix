@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -12,12 +13,13 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
+
 public class ownershipPermissionsController
 {
     public Button backBtn;
 
-    public void backBtnClick() throws IOException {
-        System.out.println("You are back to the lessons screen");
+    public void backBtnClick() throws IOException
+    {
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
         Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
@@ -62,7 +64,6 @@ public class ownershipPermissionsController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-
     public MenuItem HelpBtn;
     public void HelpBtnClick()
     {
@@ -73,7 +74,7 @@ public class ownershipPermissionsController
             e.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }//https://goo.gl/forms/DsNFP94CscyyOSs63
+        }
     } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;
