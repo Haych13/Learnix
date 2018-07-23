@@ -12,7 +12,7 @@ You can't, at least not yet, as Learnix is still being developed I'd like it to 
 
  **When is the release?**
 
-Soon. Learnix is still under development and not ready for release just yet. I am aiming for June/July 2018 for a first release.
+Soon. Learnix is still under development and not ready for a fullrelease just yet. You can download the Alpha Build here though: https://drive.google.com/file/d/19oxkc0MBx48rcMCsF5nWUvYGLlQI40Fg/view?usp=drivesdk
 
 
 
