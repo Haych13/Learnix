@@ -1,4 +1,4 @@
-package sample;
+package sample.commandLineBasics;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,7 +20,7 @@ public class pwdController
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
     public Label correctLbl;
