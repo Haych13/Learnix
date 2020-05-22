@@ -1,4 +1,4 @@
-package sample;
+package sample.permissions;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

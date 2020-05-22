@@ -11,8 +11,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-public class gnuAndLinuxController
-{
+public class gnuAndLinuxController {
     public Button backBtn;
     public void backBtnClick() throws IOException
     {
