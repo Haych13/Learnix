@@ -18,23 +18,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -45,10 +36,10 @@
                   <Font size="24.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets />
                </VBox.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -83,7 +74,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will add the execute permissions on to a file for your current user. It's the same for other permissions too." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will add the execute permissions on to a file for your current user, it's the same for other permissions too." wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -99,7 +90,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To remove permissions it is exactly the same but with a minus instead of a plus.&#10;&#10;To specify if you want it to be applied for User, Group, and/or Other, just put the letter infront of the +/- symbol." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To remove permissions, it is exactly the same but with a minus instead of a plus.&#10;&#10;To specify if you want it to be applied for User, Group, and/or Other, just put the letter in front of the +/- symbol." wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -138,7 +129,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also change permissions another way, using a numerical format. Instead of using r, w, or x you can use numbers.&#10;&#10;The numerical represenations are:&#10;&#10;4: read permission&#10;2: write permission&#10;1: execute permission&#10;&#10;So here is an example:" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also change permissions another way, using a numerical format, instead of using r, w, or x you can use numbers.&#10;&#10;The numerical representations are:&#10;&#10;4: read permission&#10;2: write permission&#10;1: execute permission&#10;&#10;So here is an example:" wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -154,7 +145,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So the 755 covers permissions for all the groups at once. The first number is your user, the second number is for your group, and 5 is other permissions.&#10;&#10;7 and 5 aren't on the list I hear you ask, well you have to add upp the 3 numbers to work out the permissions. &#10;&#10;4+2+1 = 7, so the user has all permissions, 4+1 = 5, so the Group has read and execute permissions, and same again for Other permissions." wrappingWidth="456.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So the 755 covers permissions for all the groups at once. The first number is your user, the second number is for your group, and 5 is other permissions.&#10;&#10;7 and 5 aren't on the list I hear you ask, well you have to add up the 3 numbers to work out the permissions. &#10;&#10;4+2+1 = 7, so the user has all permissions, 4+1 = 5, so the Group has read and execute permissions, and same again for Other permissions." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -162,10 +153,11 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
+            <Region prefHeight="99.0" prefWidth="480.0" />
             <HBox prefHeight="77.0" prefWidth="480.0">
                <children>
-                  <Region prefHeight="75.0" prefWidth="408.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="55.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="52.0" prefWidth="342.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

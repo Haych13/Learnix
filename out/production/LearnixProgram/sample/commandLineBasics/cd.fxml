@@ -20,23 +20,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -50,7 +41,7 @@
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets />
                </VBox.margin>
             </Label>
          </children>
@@ -70,37 +61,13 @@
    <left>
       <VBox prefHeight="574.0" prefWidth="488.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Now you know a little about how filepaths work, time to learn how to move around." wrappingWidth="447.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Now you know a little about how filepaths work, time to learn how to move around.&#10;&#10;There are two ways to change directory, Absolute Path and Relative Path.&#10;&#10;The absolute path is the full path from the Root directory. Root is the start of everything, just like a tree with roots, roots are the start. &#10;&#10;&#10;So, every path that starts with a &quot;/&quot; means you are starting from the root directory.  Here is an example:&#10;" wrappingWidth="447.0" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
                <font>
                   <Font size="15.0" />
                </font></Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="There are two ways to change directory, Absolute Path and Relative Path." wrappingWidth="445.76953125">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The absolute path is the full path from the Root directory. Root is the start of everything, just like a tree with roots, roots are the start. &#10;" wrappingWidth="445.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So, every path that starts with a &quot;/&quot; means you are starting from the root directory.  Here is an example:" wrappingWidth="438.5703125">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cd /home/harry/Documents&#10;" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="12.0" />
@@ -109,7 +76,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So now you know absolute file paths, you can use 'cd' to change directory.&#10;&#10;If you want to see all the files and other Directories inside your current one, type 'ls'." wrappingWidth="427.37451171875">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So now you know absolute file paths, you can use 'cd' to change directory.&#10;&#10;If you want to see all the files and other directories inside your current one, type 'ls'." wrappingWidth="427.37451171875">
                <font>
                   <Font size="15.0" />
                </font>
@@ -135,15 +102,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So now you are in /home/harry/Documents, inside this directory I have a folder called &quot;School&quot;." wrappingWidth="465.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From inside Documents you can change into the &quot;School&quot; directory with:" wrappingWidth="466.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So now you are in /home/harry/Documents, inside this directory I have a folder called &quot;School&quot;.&#10;&#10;From inside Documents, you can change into the &quot;School&quot; directory with:" wrappingWidth="465.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -159,7 +118,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Because you were already in /home/harry/Documents and the &quot;School&quot; directory was already there, you didn't need the full, or Absolute path. &#10;&#10;Another example is if you were in /home/harry/Pictures and inside the Pictures Directory there was a folder called &quot;Holiday&quot; you could swap into Holiday with only only:" wrappingWidth="460.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Because you were already in /home/harry/Documents and the &quot;School&quot; directory was already there, you didn't need the full, or Absolute path. &#10;&#10;Another example is if you were in /home/harry/Pictures and inside the Pictures Directory there was a folder called &quot;Holiday&quot;, you could swap into Holiday with only only:" wrappingWidth="460.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -172,18 +131,21 @@
                   <Font name="Lucida Console" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                  <Insets left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
+            <ImageView fitHeight="110.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/cdAndPwd.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="100.0" />
+               </VBox.margin>
+            </ImageView>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="178.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Assets/cdAndPwd.png" />
-                     </image>
-                  </ImageView>
-                  <Region prefHeight="100.0" prefWidth="167.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="47.0" prefWidth="151.0" text="Next">
+                  <Region prefHeight="0.0" prefWidth="367.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

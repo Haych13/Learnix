@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.whatIsADistroController">
+   <top>
+      <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar style="-fx-background-color: grey;">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
+            <Label text="What is a Distribution?" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Learnix">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="570.0" prefWidth="498.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You may have heard &quot;distribution&quot; thrown around when it comes to operating systems or more specifically, GNU/Linux; but what is a distro?&#10;&#10;GNU/Linux isn't like Windows or Mac OS where there is only one release and each one gets more updated. You can pick Windows 10 over Windows 7 but they are the same, just one being more updated than the latter.&#10;&#10;With GNU/Linux, you don't have just one version, different organisations and people work on different parts.&#10;&#10;GNU and Linux are open source, meaning people can use and modify them. &#10;&#10;You can get GNU, the Linux Kernel, and many other tools to compile them to create your own operating system but that takes a lot of time, that's why people do it for you.&#10;&#10;Each operating system made up with GNU/Linux, whilst being similar, is different. &#10;&#10;Some examples of GNU/Linux distros are:&#10;&#10;Ubuntu, Red Hat Enterprise Linux, Fedora, Debian, and Linux Mint." wrappingWidth="471.0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Text>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="582.0" prefWidth="486.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So why are there different distributions and not just one open source one?&#10;&#10;Different people have different ideas. The Fedora operating system refuses to include any closed source software. Other operating systems, such as Linux Mint, include some closed source software because it makes some things easier for users, such as accessing media.&#10;&#10;Some distros are forks of already existing ones. Ubuntu is an operating system in which at it's core is Debian, but it's been modified and made easier for general users to use. There are many distributions like this because it saves time making your own from scratch, or you like the pre-existing operating system but you just want to change a couple of things. &#10;&#10;They also include different software, Ubuntu will look different to Linux Mint. They'll each have their own package manager (this'll be covered later), in short a different way to install and update their software.&#10;&#10;If you don't understand, it's kind of like a Samsung smart phone compared to a Sony smart phone. They are both running on Android with the Linux Kernel but they both look different and include different apps (like text messengers)." wrappingWidth="470.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="557.0" prefWidth="470.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="52.0" prefWidth="418.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

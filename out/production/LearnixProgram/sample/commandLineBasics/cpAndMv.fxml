@@ -21,23 +21,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <padding>
@@ -54,7 +45,7 @@
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets />
                </VBox.margin>
             </Label>
          </children>
@@ -74,7 +65,7 @@
    <left>
       <VBox pickOnBounds="false" prefHeight="570.0" prefWidth="496.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are already adept with using a computer you should already know the basics of how to copy and paste or move files around. The Terminal gives us an easy way to do it, and even quicker if you want to copy or move multiple files.&#10;&#10;To copy a file you use the command &quot;cp&quot;, meaning CoPy, you then type in the name of the file then the destination.&#10;&#10;Here's an example:" wrappingWidth="439.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are already adept with using a computer, you should already know the basics of how to copy and paste or move files around. The Terminal gives us an easy way to do it, and even quicker if you want to copy or move multiple files.&#10;&#10;To copy a file, you use the command &quot;cp&quot;, meaning CoPy, you then type in the name of the file then the destination.&#10;&#10;Here's an example:" wrappingWidth="439.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -226,8 +217,8 @@
             </HBox>
             <HBox prefHeight="63.0" prefWidth="465.0">
                <children>
-                  <Region prefHeight="196.0" prefWidth="347.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="73.0" prefWidth="343.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>

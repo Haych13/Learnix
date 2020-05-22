@@ -6,8 +6,11 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -17,37 +20,28 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Label text="Users and Groups" textFill="WHITE">
+            <Label text="/etc/passwd" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets />
                </VBox.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -61,19 +55,58 @@
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
             </Label>
+            <Region prefHeight="21.0" prefWidth="469.0" />
+            <Label layoutX="10.0" layoutY="10.0" text="Source of image: https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
          </children>
       </HBox>
    </bottom>
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="In any traditional operating system, there are users and groups. They exist solely for access and permissions. When running a process, it will run as the owner of that process whether that is Jane or Bob. File access and ownership is also permission dependent. You wouldn't want Jane to see Bob's documents and vice versa.&#10;&#10;Each user has their own home directory where their user specific files get stored, this is usually located in /home/username, but can vary in different distributions.&#10;&#10;The system uses user ids (UID) to manage users, usernames are the friendly way to associate users with identification, but the system identifies users by their UID. The system also uses groups to manage permissions, groups are just sets of users with permission set by that group, they are identified by the system with their group ID (GID).&#10;&#10;In Linux, you'll have users in addition to the normal humans that use the system. Sometimes these users are system daemons that continuously run processes to keep the system functioning. One of the most important users is root or superuser, root is the most powerful user on the system, root can access any file and start and terminate any process. For that reason, it can be dangerous to operate as root all the time, you could potentially remove system critical files. Luckily, if root access is needed and a user has root access, they can run a command as root instead with the sudo command. The sudo command (superuser do) is used to run a command with root access, we'll go more in depth on how a user receives root access in a later lesson.&#10;&#10;" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This one might get a little confusing, especially with the next page being about /etc/shadow.&#10;&#10;You'd think being called &quot;passwd&quot; it might contain something to do with passwords, right?... Wrong. &#10;&#10;Passwd stores general user information, such as usernames, the user ID, group ID, the location of user's home directories, and the login shell. &#10;&#10;Remember, you can read the contents of /etc/with the cat command and unless you're root you'll need sudo!" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sudo cat /etc/shadow" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="2.0" />
+               </VBox.margin>
+            </Text>
+            <ImageView fitHeight="158.0" fitWidth="457.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/passwdFile.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="5.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/etc/passwd contains one entry per line for each user. Each field is separated from a colon (:), there are 7 fields.&#10;&#10;Don't worry if you can't memorise it, at least you briefly know what it is and what to look for if ever you need to.&#10;" wrappingWidth="470.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="25.0" prefWidth="517.0" />
+            <Button fx:id="cdBackBtn" mnemonicParsing="false" onAction="#cdBackBtnClick" prefHeight="35.0" prefWidth="130.0" text="Back">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -92,7 +125,7 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Go ahead and try to view a protected file like /etc/shadow:&#10;&#10;$ cat /etc/shadow&#10;&#10;Notice how you get a permission denied error, look at the permissions with:&#10;&#10;$ ls -la /etc/shadow&#10;&#10;&#10;&#10;-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow&#10;&#10;We haven't gone through permissions yet, but what's happening here is that root is the owner of the file and you'll need root access or be part of the shadow group to read the contents. Now run the command with sudo:&#10;&#10;$ sudo cat /etc/shadow&#10;&#10;Now you'll be able to see the contents of the file!" wrappingWidth="456.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Username, pretty simple, must be between 1-32 characters&#10;&#10;2: Password, the &quot;x&quot; means the password is encrypted and stored in the /etc/shadow file. (Confusing right? At first thought you'd think it should be in /etc/passwd)&#10;&#10;3: User ID (UID), Each user gets a UID. 0 is for root, 1-99 are reserved for predefined accounts, UIDs 100-999 are reserved by the system, for administrative and system accounts/groups&#10;&#10;4: Group ID (GID), The primary group ID (Which is stored in /etc/group)&#10;&#10;5: User ID Info, the comments field. It allows you to add extra information about the user, such as name, phone number, etc. You'll have seen this if you have ever tried to create a user with 'adduser'&#10;&#10;6: Home Directory, this will show the absolute path to the user's home directory, if the user doesn't have a home directory then it will show '/'&#10;&#10;7: Shell, The absolute path of the shell. Typically the shell is bash, located at /bin/bash." wrappingWidth="456.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -100,6 +133,20 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
+            <Region prefHeight="130.0" prefWidth="466.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="37.0" prefWidth="333.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </right>

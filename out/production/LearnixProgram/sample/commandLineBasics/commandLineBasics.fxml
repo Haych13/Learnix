@@ -21,23 +21,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -68,49 +59,22 @@
    <left>
       <VBox prefHeight="570.0" prefWidth="469.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The command line, also known as: Terminal, or CLI, is the most useful tool on the entire Operating System." wrappingWidth="423.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The command line, also known as the Terminal, is the most useful tool on the entire Operating System.&#10;&#10;For this tutorial, you'll be learning about the shell program Bash (Bourne Again Shell), almost all GNU/Linux distributions will use Bash, and even MacOS. &#10;&#10;So let's start. If you have a Terminal to hand, feel free to practise anything on there as practise makes perfect." wrappingWidth="423.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin></Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For this tutorial you'll be learning about the shell program Bash (Bourne Again Shell), almost all GNU/Linux distrobutions will use Bash, and even MacOS. " wrappingWidth="421.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Text fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="So let's start. If you have a Terminal to hand feel free to practice anything learnt here on there, practice makes perfect." wrappingWidth="414.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Region prefHeight="20.0" prefWidth="329.0" />
             <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username@hostname:~$" wrappingWidth="325.0">
                <font>
                   <Font name="Lucida Console" size="14.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Region layoutX="18.0" layoutY="229.0" prefHeight="20.0" prefWidth="329.0" />
-            <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you open the Terminal, the above text is similar to what you'll see on your own. It's your account's Username and then the System's name on the OS. " wrappingWidth="415.0">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Text>
-            <Region prefHeight="83.0" prefWidth="453.0" />
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Here is an example, &quot;harry&quot; is the username, and &quot;HAWK&quot; is the name of the PC" wrappingWidth="389.80615234375">
+            <Text fill="WHITE" layoutX="18.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you open the Terminal, the above text is similar to what you'll see on your own: It's your account's Username and then the System's name on the OS. &#10;&#10;Here is an example, &quot;harry&quot; is the username, and &quot;HAWK&quot; is the name of the PC" wrappingWidth="415.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -129,7 +93,7 @@
                   </ImageView>
                </children>
             </HBox>
-            <Button fx:id="CLBBackBtn" mnemonicParsing="false" onAction="#CLBBackBtnClick" prefHeight="24.0" prefWidth="60.0" text="Back">
+            <Button fx:id="CLBBackBtn" mnemonicParsing="false" onAction="#CLBBackBtnClick" prefHeight="35.0" prefWidth="130.0" text="Back">
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
@@ -152,12 +116,12 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out text in the console, not incredibly useful on its own like this but it can be useful when writing scripts.&#10;&#10;Using the example to the left for reference, what will appear if you type this?" wrappingWidth="459.0">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="So lets start with an easy command, echo. Echo prints out text in the console. While not incredibly useful on its own like this, it can be useful when writing scripts.&#10;&#10;Using the example to the left for reference, what will appear if you type this?" wrappingWidth="459.0">
                <font>
                   <Font size="15.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Text>
             <Region prefHeight="20.0" prefWidth="329.0" />
@@ -166,7 +130,7 @@
                   <Font name="Lucida Console" size="14.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
             <Region layoutX="18.0" layoutY="78.0" prefHeight="20.0" prefWidth="329.0" />
@@ -221,8 +185,8 @@
             <Region prefHeight="233.0" prefWidth="335.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="75.0" prefWidth="408.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" text="Next" textAlignment="RIGHT">
+                  <Region prefHeight="0.0" prefWidth="348.0" />
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="130.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
