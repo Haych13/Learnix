@@ -5,6 +5,24 @@
       <artifact name="LearnixProgram:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,19 +80,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>main</find>
-      <find>login</find>
-      <find>button</find>
-      <find>cd</find>
-      <find>pwd</find>
-      <find>rm</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>touch</replace>
-    </replaceStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -258,6 +263,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
@@ -271,22 +287,22 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1200" y="274" key="#Project_Structure/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590137823386" />
-    <state width="3397" height="174" key="GridCell.Tab.0.bottom" timestamp="1590138105433">
+    <state width="3397" height="185" key="GridCell.Tab.0.bottom" timestamp="1590155600887">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="174" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590138105433" />
-    <state width="3397" height="174" key="GridCell.Tab.0.center" timestamp="1590138105433">
+    <state width="3397" height="185" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590155600887" />
+    <state width="3397" height="185" key="GridCell.Tab.0.center" timestamp="1590155600887">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="174" key="GridCell.Tab.0.center/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590138105433" />
-    <state width="3397" height="174" key="GridCell.Tab.0.left" timestamp="1590138105432">
+    <state width="3397" height="185" key="GridCell.Tab.0.center/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590155600887" />
+    <state width="3397" height="185" key="GridCell.Tab.0.left" timestamp="1590155600886">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="174" key="GridCell.Tab.0.left/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590138105432" />
-    <state width="3397" height="174" key="GridCell.Tab.0.right" timestamp="1590138105433">
+    <state width="3397" height="185" key="GridCell.Tab.0.left/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590155600886" />
+    <state width="3397" height="185" key="GridCell.Tab.0.right" timestamp="1590155600887">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="3397" height="174" key="GridCell.Tab.0.right/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590138105433" />
+    <state width="3397" height="185" key="GridCell.Tab.0.right/0.0.3440.1400/3440.200.1920.1040@0.0.3440.1400" timestamp="1590155600887" />
     <state x="1200" y="274" key="SettingsEditor" timestamp="1590137974142">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
