@@ -1,4 +1,4 @@
-package sample;
+package sample.whatIsGnuAndLinux;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,7 +31,7 @@ public class whatIsADistroController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-    public Button openBtn;
+ /*   public Button openBtn;
     public void openBtnClick()throws IOException
     {
         System.out.println("You have clicked openBtn");
@@ -43,7 +43,7 @@ public class whatIsADistroController
             e.printStackTrace();
         }
     } //This opens a link to the Learnix website
-
+*/
     public MenuItem HelpBtn;
     public void HelpBtnClick()
     {
