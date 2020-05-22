@@ -1,4 +1,4 @@
-package sample;
+package sample.commandLineBasics;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,7 +14,6 @@ import java.net.URL;
 public class whatisController
 {
     public Button backBtn;
-
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();

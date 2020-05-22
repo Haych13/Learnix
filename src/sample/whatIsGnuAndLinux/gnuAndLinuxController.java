@@ -14,11 +14,10 @@ import java.net.URL;
 public class gnuAndLinuxController
 {
     public Button backBtn;
-    public void backBtnClick() throws IOException
-    {
+    public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -27,7 +26,7 @@ public class gnuAndLinuxController
     {
         System.out.println("You are now in cd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("whatIsGnuAndLinux/whatIsADistro.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("whatIsADistro.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
