@@ -22,23 +22,6 @@ public class lessonsController
         primaryStage.getScene().setRoot(newRoot);
     }
 
-    public Button practiceTestBtn;
-    public void practiceTestBtnClick()
-    {
-        System.out.println("You have clicked practiceTestBtn");
-        {
-            System.out.println("You have clicked HelpBtn");
-            try {
-                Desktop.getDesktop().browse(new URL("https://docs.google.com/forms/d/e/1FAIpQLScasXpfTuOG0zQsp2okh3zu4NEL-yr4tUwGK0bxXnQRm5pkyw/viewform?usp=sf_link").toURI());
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-        } //This opens a link to the test in which I will review test subject score
-
-    }
-
     public Button whatIsGnuBtn;
     public void whatIsGnuBtnClick() throws IOException
     {
@@ -104,8 +87,8 @@ public class lessonsController
             e.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }//https://goo.gl/forms/DsNFP94CscyyOSs63
-   } //This opens a link to the Learnix website
+        }
+    } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;
     public void CloseBtnClick()

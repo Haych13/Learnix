@@ -8,10 +8,5 @@ Learnix is an all-in-one software that doesn't need the internet to function, Le
 
  **When is the full release?**
 
-Soon. Learnix is still under development and not ready for a fullrelease just yet. You can download the Alpha Build [here](https://github.com/Haych13/Learnix/raw/master/LearnixProgram.jar) 
+Soon. Learnix is still under development and not ready for a full release just yet. 
 
-
-
-**Install Requirements:**
-
-Java 10 - http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html
