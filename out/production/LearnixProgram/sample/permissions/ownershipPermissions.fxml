@@ -19,23 +19,14 @@
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -46,10 +37,10 @@
                   <Font size="24.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  <Insets />
                </VBox.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
             </Label>
          </children>
@@ -69,7 +60,7 @@
    <left>
       <VBox prefHeight="591.0" prefWidth="484.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Whilst you can modify the permissions for files, you can also change who owns the file too.&#10;&#10;To change who owns the file you use the chown command, CHange OWNer. &#10;&#10;To own the file yourself you would do:" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Whilst you can modify the permissions for files, you can also change who owns the file too.&#10;&#10;To change who owns the file, you use the chown command, CHange OWNer. &#10;&#10;To own the file yourself, you would do:" wrappingWidth="470.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -84,7 +75,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the ownership into another user you just add in their username before the filename." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the ownership into another user, you just add in their username before the filename:" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -100,7 +91,7 @@
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </Text>
-            <Text fill="WHITE" layoutX="18.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the group you use chgrp, CHange GRouP." wrappingWidth="470.0">
+            <Text fill="WHITE" layoutX="18.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To change the group, you use chgrp, CHange GRouP:" wrappingWidth="470.0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -212,14 +203,13 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Region prefHeight="100.0" prefWidth="378.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="74.0" text="Next" textAlignment="RIGHT">
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="88.0" prefWidth="486.0" text="Congratulations you have completed this section! &#10;Back to lessons" textAlignment="CENTER">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
-                     <HBox.margin>
-                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
                   </Button>
                </children>
             </HBox>

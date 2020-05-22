@@ -13,28 +13,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.commandLineBasics.reMoveController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.reMoveController">
    <top>
       <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <MenuBar style="-fx-background-color: grey;">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="HelpBtn" mnemonicParsing="false" onAction="#HelpBtnClick" text="Learnix Website" />
+                        <MenuItem fx:id="CloseBtn" mnemonicParsing="false" onAction="#CloseBtnClick" text="Close the Application" />
+                     </items>
+                  </Menu>
+               </menus>
             </MenuBar>
             <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnClick" text="Back to lessons">
                <VBox.margin>
@@ -44,6 +35,12 @@
                <font>
                   <Font size="25.0" />
                </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
             </Label>
          </children>
       </VBox>
@@ -62,10 +59,37 @@
    <left>
       <VBox prefHeight="618.0" prefWidth="501.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. &#10;$ rm file1&#10;Take caution when using rm, there is no magical trash can that you can fish out removed files. Once they are gone, they are gone for good, so be careful. &#10;Fortunately there are some safety measures put into place, so the average joe can’t just remove a bunch of important files. Write-protected files will prompt you for confirmation before deleting them. If a directory is write-protected it will also not be easily removed. &#10;Now if you don’t care about any of that, you can absolutely remove a bunch of files. &#10;$ rm -f file1&#10;-f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user (as long as you have the appropriate permissions).&#10;$ rm -i file&#10;Adding the -i flag like many of the other commands, will give you a prompt on whether you want to actually remove the files or directories. &#10;$ rm -r directory&#10;You can’t just rm a directory by default, you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.&#10;You can remove a directory with the rmdir command.&#10;$ rmdir directory &#10;&#10;&#10;" wrappingWidth="478.0" VBox.vgrow="ALWAYS">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can now make files and directories, but what about deleting them?&#10;&#10;To delete files, you use the rm (ReMove) command. Be careful, because there is no Recycle Bin here; once you delete a file it is gone. &#10;&#10;To delete a file use the rm command and then the name of the file" wrappingWidth="478.0" VBox.vgrow="ALWAYS">
                <font>
                   <Font size="15.0" />
-               </font></Text>
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rm file" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can’t just delete any and every file, luckily there are things in place to stop that. Files can be “Write protected” and will ask for confirmation before you delete them.&#10;&#10;If you know for sure you want to delete the file and don’t care if it’s protected or not, you can use the ‘-f’ flag, meaning force, as this will delete the file instantly.&#10;" wrappingWidth="478.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rm -f file" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
          </children>
          <BorderPane.margin>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -84,15 +108,43 @@
             <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
          </padding>
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You can add the ‘-i’ flag, this will ask if you want to delete the files or directories, it’s good if you are worried about deleting the wrong file.&#10;&#10;Well that’s easy, is it the same to delete a directory? Almost, to delete a directory you need to add the ‘-r’ flag, meaning recursive. This will delete all files and subdirectories there might me. " wrappingWidth="478.0">
                <font>
                   <Font size="15.0" />
                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="rm -r directory" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the directory is empty, you can use the ‘rmdir’ (ReMove DIRectory) command." wrappingWidth="478.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rmdir directory" wrappingWidth="325.0">
+               <font>
+                  <Font name="Lucida Console" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Region prefHeight="250.0" prefWidth="488.0" />
             <HBox prefHeight="63.0" prefWidth="465.0">
                <children>
                   <Region prefHeight="196.0" prefWidth="347.0" />
-                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="33.0" prefWidth="82.0" text="Next" textAlignment="RIGHT">
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextBtnClick" prefHeight="35.0" prefWidth="135.0" text="Next" textAlignment="RIGHT">
                      <padding>
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </padding>
