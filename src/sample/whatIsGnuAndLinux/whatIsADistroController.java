@@ -18,7 +18,7 @@ public class whatIsADistroController
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 	
@@ -27,11 +27,11 @@ public class whatIsADistroController
     {
         System.out.println("You are now in cd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("whatIsGnuAndLinux/whatIsOpenSource.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("whatIsOpenSource.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
- /*   public Button openBtn;
+    public Button openBtn;
     public void openBtnClick()throws IOException
     {
         System.out.println("You have clicked openBtn");
@@ -43,7 +43,7 @@ public class whatIsADistroController
             e.printStackTrace();
         }
     } //This opens a link to the Learnix website
-*/
+
     public MenuItem HelpBtn;
     public void HelpBtnClick()
     {
