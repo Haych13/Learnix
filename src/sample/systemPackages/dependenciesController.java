@@ -1,4 +1,4 @@
-package sample;
+package sample.systemPackages;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,7 +18,7 @@ public class dependenciesController
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -27,7 +27,7 @@ public class dependenciesController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/repositories.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("repositories.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -35,7 +35,7 @@ public class dependenciesController
     public void nextBtnClick() throws IOException
     {
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/aptYum.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("aptYum.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -45,9 +45,7 @@ public class dependenciesController
         System.out.println("You have clicked HelpBtn");
         try {
             Desktop.getDesktop().browse(new URL("https://haych13.github.io/Learnix").toURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
+        } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
     } //This opens a link to the Learnix website

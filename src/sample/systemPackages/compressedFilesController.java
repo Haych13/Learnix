@@ -1,4 +1,4 @@
-package sample;
+package sample.systemPackages;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,7 +18,7 @@ public class compressedFilesController
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -27,7 +27,7 @@ public class compressedFilesController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) cdBackBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/dpkgRpm.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("dpkgRpm.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -35,7 +35,7 @@ public class compressedFilesController
     public void nextBtnClick() throws IOException
     {
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("systemPackages/compressedFilesCont.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("compressedFilesCont.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -45,11 +45,9 @@ public class compressedFilesController
         System.out.println("You have clicked HelpBtn");
         try {
             Desktop.getDesktop().browse(new URL("https://haych13.github.io/Learnix").toURI());
-        } catch (IOException e) {
+        } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }//https://goo.gl/forms/DsNFP94CscyyOSs63
+        }
     } //This opens a link to the Learnix website
 
     public MenuItem CloseBtn;
