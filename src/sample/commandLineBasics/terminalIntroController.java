@@ -1,4 +1,4 @@
-package sample;
+package sample.commandLineBasics;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,7 +18,7 @@ public class terminalIntroController
     {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -27,7 +27,8 @@ public class terminalIntroController
     {
         System.out.println("You are now in pwd");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics/commandLineBasics.fxml"));
+        Parent newRoot;
+        newRoot = FXMLLoader.load(getClass().getResource("commandLineBasics.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -37,9 +38,7 @@ public class terminalIntroController
         System.out.println("You have clicked HelpBtn");
         try {
             Desktop.getDesktop().browse(new URL("https://haych13.github.io/Learnix").toURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
+        } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
     } //This opens a link to the Learnix website

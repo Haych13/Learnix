@@ -1,4 +1,4 @@
-package sample;
+package sample.commandLineBasics;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
