@@ -1,4 +1,4 @@
-package sample;
+package sample.usersAndGroups;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,7 +19,7 @@ public class managingUsersController
     public void backBtnClick() throws IOException {
         System.out.println("You are back to the lessons screen");
         Stage primaryStage = (Stage) backBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("lessons.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("../lessons.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -61,7 +61,7 @@ public class managingUsersController
     {
         System.out.println("You are now in usersAndGroupsCont");
         Stage primaryStage = (Stage) nextBtn.getScene().getWindow();
-        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups/usersAndGroups.fxml"));
+        Parent newRoot = FXMLLoader.load(getClass().getResource("usersAndGroups.fxml"));
         primaryStage.getScene().setRoot(newRoot);
     }
 
@@ -71,9 +71,7 @@ public class managingUsersController
         System.out.println("You have clicked HelpBtn");
         try {
             Desktop.getDesktop().browse(new URL("https://haych13.github.io/Learnix").toURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
+        } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
     } //This opens a link to the Learnix website
